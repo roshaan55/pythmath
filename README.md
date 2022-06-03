@@ -78,7 +78,7 @@ import pythmath
 num = 25
 print(pythmath.square_root(num))
 ```
-**Output:** 25
+**Output:** 5
 
 ## cube_root():
 It is a function that finds the cube root of a number.
