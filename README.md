@@ -350,4 +350,123 @@ print(pythmath.cosh(angle))
 ```
 **Output:** 36002449668.69289
 
+## cosec():
+It is a function to calculate cosec of a number in radians.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.cosec(angle))
+```
+**Output:** -7.555623550585948
+
+## cosecd():
+It is a function to calculate cosec of a number in degrees.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.cosecd(angle))
+```
+**Output:** 2.3662015831524985
+
+## cot():
+It is a function to calculate cotangent of a number in radians.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.cot(angle))
+```
+**Output:** -7.489155308722674
+
+## cotd():
+It is a function to calculate cotangent of a number in degrees.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.cotd(angle))
+```
+**Output:** 2.1445069205095586
+
+## sec():
+It is a function to calculate secant of a number in radians.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.sec(angle))
+```
+**Output:** 1.0088752655170414
+
+## secd():
+It is a function to calculate secant of a number in degrees.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.secd(angle))
+```
+**Output:** 1.1033779189624917
+
+## tan():
+It is a function to calculate tangent of a number in radians.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.tan(angle))
+```
+**Output:** -0.13352640702153587
+
+## tand():
+It is a function to calculate tangent of a number in degrees.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.tand(angle))
+```
+**Output:** 0.46630765815499864
+
+## tanh():
+It is a function to calculate hyperbolic tangent of a number in radians.
+
+**Example:**
+```py
+import pythmath
+
+angle = 25
+
+print(pythmath.tanh(angle))
+```
+**Output:** 1.0
+
+For more examples see [Examples](https://github.com/roshaan55/pythmath/blob/main/examples "Examples of funcions of pythmath").
+
 
