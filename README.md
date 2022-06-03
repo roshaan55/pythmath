@@ -199,6 +199,6 @@ print(pythmath.ceil(a))
 ```
 **Output:** 4
 
-For more basic math functions see For more examples see [Examples/Basic Math Functions](https://github.com/roshaan55/pythmath/blob/main/examples/Basic%20Math%20Funcions "Examples of basic math functions").
+For more basic math functions see [Examples/Basic Math Functions](https://github.com/roshaan55/pythmath/tree/main/Examples/Basic%20Math%20Funcions "Examples of basic math functions").
 
 
