@@ -53,3 +53,56 @@ It is an advanced revised version of built-in math library which helps to perfor
 15) **tan()**
 16) **tand()**
 17) **tanh()**
+
+
+# Basic Math Function Implementation:
+## absolute():
+It  is the function that gets the absolute value of x, if negative value it will be positive value.
+
+**Example:**
+```py
+import pythmath
+
+num = -7
+print(pythmath.absolute(num))
+```
+**Output:** 7
+
+## square_root():
+It is a function that finds the square root of any number.
+
+**Example:**
+```py
+import pythmath
+
+num = 25
+print(pythmath.square_root(num))
+```
+**Output:** 25
+
+## cube_root():
+It is a function that finds the cube root of a number.
+
+**Example:**
+```py
+import pythmath
+
+num = 27
+print(pythmath.cube_root(num))
+```
+**Output:** 3
+
+## calc_lcm():
+It is a function that calculates the least common multiple of two numbers
+
+**Example:**
+```py
+import pythmath
+
+a = 10
+b = 18
+
+print(pythmath.calc_lcm(a, b))
+```
+**Output:** 90.0
+
