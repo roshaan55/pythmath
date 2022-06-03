@@ -106,3 +106,99 @@ print(pythmath.calc_lcm(a, b))
 ```
 **Output:** 90.0
 
+## calc_gcd():
+It is a function that calculates the greatest common divisor of two numbers.
+
+**Example**
+```py
+import pythmath
+
+a = 20
+b = 18
+
+print(pythmath.calc_gcd(a, b))
+```
+**Output:** 2.0
+
+## fact():
+It is a function that calculates the factorial of number.
+
+**Example:**
+```py
+import pythmath
+
+num = 4
+
+print(pythmath.fact(num))
+```
+**Output:** 24.0
+
+## intsqrt():
+It is a function to get the integer part of square root of a number.
+
+**Examples:**
+```py
+import pythmath
+
+a = 20
+
+print(pythmath.intsqrt(a))
+```
+**Output:** 4
+
+## intcbrt():
+It is a function to get the integer part of cube root of a number
+
+**Example**
+```py
+import pythmath
+
+a = 20
+
+print(pythmath.intcbrt(a))
+```
+**Output**: 2
+
+## hypotenuse():
+It is function that calculates the hypotenuse of two numbers.
+
+**Example:**
+```py
+import pythmath
+
+a = 3
+b = 4
+
+print(pythmath.hypotenuse(a, b))
+```
+**Output:** 5.0
+
+## floor():
+It is the function that gets the exact floored value, for example the number is 3.4 it will get 3
+
+**Example:**
+```py
+import pythmath
+
+a = 3.7
+
+print(pythmath.floor(a))
+```
+**Output:** 3
+
+## ceil()
+It is function that ceil the number.
+
+**Example:**
+```py
+import pythmath
+
+a = 3.7
+
+print(pythmath.ceil(a))
+```
+**Output:** 4
+
+For more basic math functions see For more examples see [Examples/Basic Math Functions](https://github.com/roshaan55/pythmath/blob/main/examples/basic%20math%20funcions "Examples of basic math functions").
+
+
