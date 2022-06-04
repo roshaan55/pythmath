@@ -1,7 +1,16 @@
-# pythmath
+# pythmath 0.1
 Advance Math Library which performs all the basic and scientific math operations such as cos, sin, tan etc
 
 It is an advanced revised version of built-in math library which helps to perform math operations. It includes the area functions which calculates the **area of square**, **area of triangle**, **area of circle** and **area of rectangle**. **pythmath 0.1** includes functions which are as follows:
+
+## Installation:
+```nano
+pip install pycamdetector
+```
+## For Upgradation(pycamdetector):
+```nano
+pip install --upgrade pycamdetector
+```
 
 ## Basic Math Functions:
 1) **absoulte()**
