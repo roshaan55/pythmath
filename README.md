@@ -7,7 +7,7 @@ It is an advanced revised version of built-in math library which helps to perfor
 ```nano
 pip install pythmath
 ```
-## For Upgradation(pycamdetector):
+## For Upgradation(pythmath):
 ```nano
 pip install --upgrade pythmath
 ```
