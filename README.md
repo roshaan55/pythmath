@@ -13,59 +13,59 @@ pip install --upgrade pythmath
 ```
 
 ## Basic Math Functions:
-1) **absoulte()**
-2) **sqare_root()**
-3) **cube_root()**
-4) **calc_lcm()**
-5) **calc_gcd()**
-6) **fact()**
-7) **intsqrt()**
-8) **intcbrt()**
-9) **hypotenuse()**
-10) **floor()**
-11) **ceil()**
-12) **floatsum()**
-13) **floatabs()**
-14) **remainder()**
-15) **euc_dist()**
-16) **exponential()**
-17) **iseven()**
-18) **isinteger()**
-19) **isodd()**
-20) **isprime()**
-21) **ispositive()**
-22) **isnegative()**
-23) **iszero()**
+1) **Absolute Function**
+2) **Square Root Function**
+3) **Cube Root Function**
+4) **LCM Function**
+5) **GCD Function**
+6) **Factorial Function**
+7) **Integer Square Root Function**
+8) **Integer Cube Root Function**
+9) **Hypotenuse Function**
+10) **Floor Function**
+11) **Ceil Function**
+12) **Float Sum Function**
+13) **Float Absolute Function**
+14) **Remainder Function**
+15) **Euclidean Distance Function**
+16) **Exponential Function**
+17) **Is Even Function**
+18) **Is Integer Function**
+19) **Is Odd Function**
+20) **Is Prime Function**
+21) **Is Positive Function**
+22) **Is Negative Function**
+23) **Is Zero Function**
 
 ## Area Functions
-1) **area_rect()**
-2) **area_triangle()**
-3) **area_square()**
-4) **area_circle()**
-5) **perimeter_rect()**
+1) **Area of Rectangle Function**
+2) **Area of Triangle Function**
+3) **Area of Square Function**
+4) **Area of Circle Function**
+5) **Perimeter of Rectangle Function**
 
 ## Trignometric Functions:
-1) **deg_to_rad()**
-2) **rad_to_deg()**
-3) **sin()**
-4) **sinh()**
-5) **sind()**
-6) **cos()**
-7) **cosd()**
-8) **cosh()**
-9) **cosec()**
-10) **cosecd()**
-11) **cot()**
-12) **cotd()**
-13) **sec()**
-14) **secd()**
-15) **tan()**
-16) **tand()**
-17) **tanh()**
+1) **Degrees to Radians Function**
+2) **Radians to Degrees Function**
+3) **Sin(x) Function**
+4) **Sinh(x) Function**
+5) **Sind(x) Function**
+6) **Cos(x) Function**
+7) **Cosd(x) Function**
+8) **Cosh(x) Function**
+9) **Cosec(x) Function**
+10) **Cosecd(x) Function**
+11) **Cot(x) Function**
+12) **Cotd(x) Function**
+13) **Sec(x) Function**
+14) **Secd(x) Function**
+15) **Tan(x) Function**
+16) **Tand(x) Function**
+17) **Tanh(x) Function**
 
 
 # Basic Math Function Implementation:
-## absolute():
+## Absolute Function:
 It  is the function that gets the absolute value of x, if negative value it will be positive value.
 
 **Example:**
@@ -77,7 +77,7 @@ print(pythmath.absolute(num))
 ```
 **Output:** 7
 
-## square_root():
+## Square Root Function:
 It is a function that finds the square root of any number.
 
 **Example:**
@@ -89,7 +89,7 @@ print(pythmath.square_root(num))
 ```
 **Output:** 5
 
-## cube_root():
+## Cube Root Function:
 It is a function that finds the cube root of a number.
 
 **Example:**
@@ -101,7 +101,7 @@ print(pythmath.cube_root(num))
 ```
 **Output:** 3
 
-## calc_lcm():
+## LCM Function:
 It is a function that calculates the least common multiple of two numbers
 
 **Example:**
@@ -115,7 +115,7 @@ print(pythmath.calc_lcm(a, b))
 ```
 **Output:** 90.0
 
-## calc_gcd():
+## GCD Function:
 It is a function that calculates the greatest common divisor of two numbers.
 
 **Example**
@@ -142,7 +142,7 @@ print(pythmath.fact(num))
 ```
 **Output:** 24.0
 
-## intsqrt():
+## Integer Square Root Function:
 It is a function to get the integer part of square root of a number.
 
 **Examples:**
@@ -155,7 +155,7 @@ print(pythmath.intsqrt(a))
 ```
 **Output:** 4
 
-## intcbrt():
+## Integer Cube Root Function:
 It is a function to get the integer part of cube root of a number
 
 **Example**
@@ -168,7 +168,7 @@ print(pythmath.intcbrt(a))
 ```
 **Output**: 2
 
-## hypotenuse():
+## Hypotenuse Function:
 It is function that calculates the hypotenuse of two numbers.
 
 **Example:**
@@ -182,7 +182,7 @@ print(pythmath.hypotenuse(a, b))
 ```
 **Output:** 5.0
 
-## floor():
+## Floor Function:
 It is the function that gets the exact floored value, for example the number is 3.4 it will get 3
 
 **Example:**
@@ -195,7 +195,7 @@ print(pythmath.floor(a))
 ```
 **Output:** 3
 
-## ceil()
+## Ceil Function
 It is function that ceil the number.
 
 **Example:**
@@ -211,7 +211,7 @@ print(pythmath.ceil(a))
 For more basic math functions see [Examples/Basic Math Functions](https://github.com/roshaan55/pythmath/tree/main/Examples/Basic%20Math%20Funcions "Examples of basic math functions").
 
 ## Area Functions:
-# area_rect():
+# Area of Rectangle Function:
 It is a function that calculates the area of rectangle.
 
 **Example:**
@@ -225,7 +225,7 @@ print(pythmath.area_rect(x, y))
 ```
 **Output:** 30.0
 
-## perimeter_rect()
+## Perimeter of Rectangle Function:
 It is a function to calculate the perimeter of rectangle.
 
 **Example:**
@@ -239,7 +239,7 @@ print(pythmath.perimeter_rect(x, y))
 ```
 **Output:** 22.0
 
-## area_triangle():
+## Area of Triangle Function:
 It is a function that calculates the area of triangle.
 
 **Example:**
@@ -254,7 +254,7 @@ print(pythmath.area_triangle(a, b, c))
 ```
 **Output:** 14.696938456699069
 
-## area_square():
+## Area of Square Function:
 It is a function that calculates the area of square.
 
 **Example:**
@@ -267,7 +267,7 @@ print(pythmath.area_square(x))
 ```
 **Output:** 25.0
 
-## area_circle():
+## Area of Circle Function:
 It is a function to calculate the area of circle.
 
 **Example:**
@@ -281,7 +281,7 @@ print(pythmath.area_circle(radius))
 **Output:** 78.53981633974483
 
 ## Trignometric Functions:
-# sin()
+# Sin(x) Function:
 It is function to calculate sine of x or any number in radians.
 
 **Example:**
@@ -294,7 +294,7 @@ print(pythmath.sin(angle))
 ```
 **Output**: -0.13235175009777303
 
-## sind():
+## Sind(x) Function:
 It is a function to calculate sine of a number in degrees.
 
 **Example:**
@@ -307,7 +307,7 @@ print(pythmath.sind(angle))
 ```
 **Output:** 0.42261826174069944
 
-## sinh():
+## Sinh(x) Function:
 It is a function to calculate hyperbolic sine of a number in radians.
 
 **Example:**
@@ -320,7 +320,7 @@ print(pythmath.sinh(angle))
 ```
 **Output:** 36002449668.69289
 
-## cos():
+## Cos(x) Function:
 It is a function to calculate cosine of a number in radians.
 
 **Example:**
@@ -333,7 +333,7 @@ print(pythmath.cos(angle))
 ```
 **Output:** 0.9912028118634736
 
-## cosd():
+## Cosd(x) Function:
 It is a function to calculate cosine of a number in degrees.
 
 **Example:**
@@ -346,7 +346,7 @@ print(pythmath.cosd(angle))
 ```
 **Output:** 0.9063077870366499
 
-## cosh():
+## Cosh(x) Function:
 It is a function to calculate hyperbolic cosine of a number in radians.
 
 **Example:**
@@ -359,7 +359,7 @@ print(pythmath.cosh(angle))
 ```
 **Output:** 36002449668.69289
 
-## cosec():
+## Cosec(x) Function:
 It is a function to calculate cosec of a number in radians.
 
 **Example:**
@@ -372,7 +372,7 @@ print(pythmath.cosec(angle))
 ```
 **Output:** -7.555623550585948
 
-## cosecd():
+## Cosecd(x) Function:
 It is a function to calculate cosec of a number in degrees.
 
 **Example:**
@@ -385,7 +385,7 @@ print(pythmath.cosecd(angle))
 ```
 **Output:** 2.3662015831524985
 
-## cot():
+## Cot(x) Function:
 It is a function to calculate cotangent of a number in radians.
 
 **Example:**
@@ -398,7 +398,7 @@ print(pythmath.cot(angle))
 ```
 **Output:** -7.489155308722674
 
-## cotd():
+## Cotd(x) Function:
 It is a function to calculate cotangent of a number in degrees.
 
 **Example:**
@@ -411,7 +411,7 @@ print(pythmath.cotd(angle))
 ```
 **Output:** 2.1445069205095586
 
-## sec():
+## Sec(x) Function:
 It is a function to calculate secant of a number in radians.
 
 **Example:**
@@ -424,7 +424,7 @@ print(pythmath.sec(angle))
 ```
 **Output:** 1.0088752655170414
 
-## secd():
+## Secd(x) Function:
 It is a function to calculate secant of a number in degrees.
 
 **Example:**
@@ -437,7 +437,7 @@ print(pythmath.secd(angle))
 ```
 **Output:** 1.1033779189624917
 
-## tan():
+## Tan(x) Function:
 It is a function to calculate tangent of a number in radians.
 
 **Example:**
@@ -450,7 +450,7 @@ print(pythmath.tan(angle))
 ```
 **Output:** -0.13352640702153587
 
-## tand():
+## Tand(x) Function:
 It is a function to calculate tangent of a number in degrees.
 
 **Example:**
@@ -463,7 +463,7 @@ print(pythmath.tand(angle))
 ```
 **Output:** 0.46630765815499864
 
-## tanh():
+## Tanh(x) Function:
 It is a function to calculate hyperbolic tangent of a number in radians.
 
 **Example:**
