@@ -129,7 +129,7 @@ print(pythmath.calc_gcd(a, b))
 ```
 **Output:** 2.0
 
-## fact():
+## Factorial Function:
 It is a function that calculates the factorial of number.
 
 **Example:**
