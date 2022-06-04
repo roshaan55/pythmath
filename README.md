@@ -5,11 +5,11 @@ It is an advanced revised version of built-in math library which helps to perfor
 
 ## Installation:
 ```nano
-pip install pycamdetector
+pip install pythmath
 ```
 ## For Upgradation(pycamdetector):
 ```nano
-pip install --upgrade pycamdetector
+pip install --upgrade pythmath
 ```
 
 ## Basic Math Functions:
