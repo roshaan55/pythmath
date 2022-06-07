@@ -1,4 +1,4 @@
-# pythmath 0.1
+# pythmath 0.2
 Advance Math Library which performs all the basic and scientific math operations such as cos, sin, tan etc
 
 It is an advanced revised version of built-in math library which helps to perform math operations. It includes the area functions which calculates the **area of square**, **area of triangle**, **area of circle** and **area of rectangle**. **pythmath 0.1** includes functions which are as follows:
@@ -11,6 +11,25 @@ pip install pythmath
 ```nano
 pip install --upgrade pythmath
 ```
+
+New upadate **pythmath 0.2** includes new functions such as statistical functions(mean, median, mode, variance) etc and other maths functions.
+New updates includes error functions such as percentage error, absolute error and relatable error.
+
+## New Math Functions:
+1) **Is Sorted**
+2) **Percentage**
+3) **Array Sum**
+4) **Array 2d Sum**
+5) **nCr**
+6) **nPr**
+7) **Fibonacci Series Function**
+8) **Multiply Two List**
+9) **Square of List**
+10) **Powerd List**
+11) **Sort List**
+12) **Count List**
+13) **Minimum in List**
+14) **Maximum in List**
 
 ## Basic Math Functions:
 1) **Absolute Function**
@@ -63,6 +82,111 @@ pip install --upgrade pythmath
 16) **Tand(x) Function**
 17) **Tanh(x) Function**
 
+## Statistical Functions
+1) **Mean**
+2) **Median**
+3) **Mode**
+4) **Standard Deviation**
+5) **Mean Absolute Deviation(MAD)**
+6) **Variance**
+7) **Z Score**
+8) **Standard Error**
+9) **Sampling Error**
+10) **Statistical Range**
+11) **Midpoint Range**
+
+## Error Functions:
+1) **Percentage Error**
+2) **Absolute Error**
+3) **Relatable Error**
+
+# New Math Functions:
+## Is Sorted:
+It is the function to check whether the list is sorted or not, if a list is sorted it will return **True** otherwise **False**.
+
+**Example:**
+```py
+import pythmath
+
+lst1 = [2, 8, 15, 3, 5]
+lst2 = [1, 2, 3, 4, 5]
+
+print(pythmath.is_sorted(lst1))
+print(pythmath.is_sorted(lst2))
+```
+**Output 1:** **False**
+**Output 2:** **True**
+
+## Percentage:
+It is a function to calculate percentage
+
+**Example:**
+```py
+import pythmath
+
+print(pythmath.percentage(20, 50))
+```
+**Output:** 40.0
+
+# Array Sum:
+It is a function that calculates the sum of numbers in a **1d Array**.
+
+**Example:**
+```py
+import pythmath
+
+
+array = {12, 3, 4, 15}
+print(pythmath.arr_sum(array))
+```
+**Output:** 34
+
+# Array 2d Sum:
+It is a function to calculates the sum of numbers in a **2d Array**.
+
+**Example:**
+```py
+import pythmath
+
+
+array_2d = [[1, 2],
+            [3, 4],
+            [5, 6]
+            ]
+print(pythmath.arr_2d_sum(array_2d))
+```
+**Output:** 21
+
+# nCr:
+It is a function that calculates the Combinations nCr from n a r values.
+
+**Example:**
+```py
+import pythmath
+
+
+n = 10
+r = 5
+print(pythmath.nCr(n, r))
+```
+**Output:** 252.0
+
+# nPr:
+It is a function that calculates Permutations nPr from n and r values.
+
+**Example:**
+```py
+import pythmath
+
+
+n = 5
+r = 2
+print(pythmath.nCr(n, r))
+```
+**Output:** 20.0
+
+# Fibonacci Series:
+It is a function that generates the fibonacci series from n_terms.
 
 # Basic Math Function Implementation:
 ## Absolute Function:
