@@ -87,13 +87,14 @@ New updates includes error functions such as percentage error, absolute error an
 2) **Median**
 3) **Mode**
 4) **Standard Deviation**
-5) **Mean Absolute Deviation(MAD)**
-6) **Variance**
-7) **Z Score**
-8) **Standard Error**
-9) **Sampling Error**
-10) **Statistical Range**
-11) **Midpoint Range**
+5) **Population Standard Deviation**
+6) **Mean Absolute Deviation(MAD)**
+7) **Variance**
+8) **Z Score**
+9) **Standard Error**
+10) **Sampling Error**
+11) **Statistical Range**
+12) **Midpoint Range**
 
 ## Error Functions:
 1) **Percentage Error**
@@ -186,7 +187,106 @@ print(pythmath.nCr(n, r))
 **Output:** 20.0
 
 # Fibonacci Series:
-It is a function that generates the fibonacci series from n_terms.
+It is a function that generates the fibonacci series from n_terms. It takes three parameters **first**, **second** and **n_terms**.
+**n_terms:** Number of terms to generate fibonacci series, by default its value is **5** and it is optional. If you leave it by default it generates fibonacci series to **5 terms**.
+
+**Example:**
+```py
+import pythmath
+
+
+print(pythmath.fibonacci(0, 2))
+```
+**Output:** [0, 2, 2, 4, 6]
+
+# Multiply Two List:
+It is a function that multiplies each number in two list **List 1** and **List 2** and returns a new multiplied list of these numbers.
+
+**Example:**
+```py
+import pythmath
+
+x = [1, 2, 3, 4]
+y = [5, 2, 4, 1]
+print(pythmath.mult_two_lst(x, y))
+```
+**Output:** [5, 4, 12, 4]
+
+# Square of Two List:
+It is a function that squares each number in a list and returns a new squared list of these numbers.
+
+**Example:**
+```py
+import pythmath
+
+x = [1, 2, 3, 4]
+print(pythmath.square_lst(x))
+```
+**Output:** [1, 4, 9, 16]
+
+# Powered List:
+It is a function that calculates the power of each number in a list and returns a new powered list of these numbers. It takes two parameters: **lst: List** and **pow_val**
+**pow_val:** Value of power to calculate the power of each number in a list, it is optional and by default its value is 2.
+
+**Example:** 
+```py
+import pythmath
+
+x = [1, 2, 3, 4]
+print(pythmath.pow_lst(x, 3))
+```
+**Output:** [1, 8, 27, 64]
+
+# Sort List:
+It is function that sorts the elements in a list in ascending order. If the list is sorted it will print the message: **The list is already sorted!**
+
+**Example:**
+```py
+import pythmath
+
+my_list = [5, 10, 4, 3, 2, 17]
+lst = [1, 2, 3, 4, 5]
+print(pythmath.sort(my_list))
+print(pythmath.sort(lst))
+```
+**Output of my_list:** [2, 3, 4, 5, 10, 17]
+**Output of lst:** The list is already sorted!
+
+# Count List:
+It is a function that counts how many numbers in a list.
+
+**Example:**
+```py
+import pythmath
+
+
+results = [1, 2, 3, 4, 5]
+print(pythmath.count(results))
+```
+**Output:** 5
+
+# Minimum in List:
+It is a function that finds the minimum value in a list.
+
+**Example:**
+```py
+import pythmath
+
+lst = [1, 2, 3, 4, 5]
+print(pythmath.minimum(lst))
+```
+**Output:** 1
+
+# Maximum in a List:
+It is a function that finds the maximum value in a list.
+
+**Example:**
+```py
+import pythmath
+
+lst = [1, 2, 3, 4, 5]
+print(pythmath.maximum(lst))
+```
 
 # Basic Math Function Implementation:
 ## Absolute Function:
@@ -599,6 +699,121 @@ angle = 25
 print(pythmath.tanh(angle))
 ```
 **Output:** 1.0
+
+## Statistical Functions:
+# Mean:
+It is a function to calculate the mean of given dataset or list.
+**Mean:** In mathematics and statistics, the arithmetic mean or arithmetic average, or simply just the mean or the average, is the sum of a collection of numbers divided by the count of numbers in the collection.
+
+**Example:**
+```py
+import pythmath
+
+numbers = [1, 2, 3, 4, 5]
+
+print(pythmath.mean(numbers))
+```
+**Output:** 3.0
+
+# Median:
+It is function that calculates median of given dataset or list.
+**Median:** In statistics and probability theory, the median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution. For a data set, it may be thought of as "the middle" value.
+
+**Example:**
+```py
+import pythmath
+
+numbers = [1, 2, 3, 4, 5]
+
+print(pythmath.median(numbers))
+```
+**Output:** 3
+
+# Mode:
+It is a function that gets the mode of given datasets or list.
+**Mode:** The mode is the value that appears most often in a set of data values. If X is a discrete random variable, the mode is the value x at which the probability mass function takes its maximum value. In other words, it is the value that is most likely to be sampled.
+
+**Example:**
+```py
+import pythmath
+
+numbers = [1, 2, 3, 4, 5, 5]
+
+print(pythmath.mode(numbers))
+```
+**Output:** 5
+
+# Standard Deviation:
+It calculates the standard deviation from given dataset or list of numbers.
+**Standard Deviation:** In statistics, the standard deviation is a measure of the amount of variation or dispersion of a set of values. A low standard deviation indicates that the values tend to be close to the mean of the set, while a high standard deviation indicates that the values are spread out over a wider range.
+
+**Example:**
+```py
+import pythmath
+
+data = [1, 2, 3, 4, 5]
+
+print(pythmath.stdev(data))
+```
+**Output:** 1.5811388300841898
+
+# Population Standard Deviation:
+It is a function that calculates population standard deviation from given dataset or list of numbers.
+
+**Example:**
+```py
+import pythmath
+
+data = [1, 2, 3, 4, 5]
+
+print(pythmath.pstdev(data))
+```
+**Output:** 1.4142135623730951
+
+# Mean Absolute Deviation(MAD):
+It is a function that calculates the mean absolute deviation from given dataset or list of numbers.
+**Mean Absolute Deviation:** The mean absolute deviation (MAD) is a measure of variability that indicates the average distance between observations and their mean. MAD uses the original units of the data, which simplifies interpretation. Larger values signify that the data points spread out further from the average. Conversely, lower values correspond to data points bunching closer to it. The mean absolute deviation is also known as the mean deviation and average absolute deviation.
+
+**Example:**
+```py
+import pythmath
+
+data = [1, 2, 3, 4, 5]
+
+print(pythmath.mad(data))
+```
+**Output:** 1.2
+
+# Variance:
+It is a function that calculates the variance from given dataset or list of values. it takes two parameters: **data: values of dataset** and **v_mode**.
+**v_mode:** Mode of variance either standard(std) or population(pop), it is optional and by default its mode is standard(std)
+**Note:** pop does not equivalent to stack pop.
+
+**Example:**
+```py
+import pythmath
+
+data = [2, 4, 6, 8, 10]
+
+print(pythmath.variance(data))
+```
+**Output:** 10.0
+
+# Z Score:
+It is a function that calculates the z score value from x, mean value and from value of standard deviation.
+**Z Score:** In statistics, the standard score is the number of standard deviations by which the value of a raw score is above or below the mean value of what is being observed or measured. Raw scores above the mean have positive standard scores, while those below the mean have negative standard scores.
+
+**Example:**
+```py
+import pythmath
+
+x = 70
+mean_val = 60
+st_dev = 15
+
+print(pythmath.zscore(x, mean_val, st_dev))
+```
+**Output:** 0.6666666666666666
 
 For more examples see [Examples](https://github.com/roshaan55/pythmath/blob/main/examples "Examples of funcions of pythmath").
 
