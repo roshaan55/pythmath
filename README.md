@@ -116,6 +116,7 @@ print(pythmath.is_sorted(lst1))
 print(pythmath.is_sorted(lst2))
 ```
 **Output 1:** **False**
+
 **Output 2:** **True**
 
 ## Percentage:
