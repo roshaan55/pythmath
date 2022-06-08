@@ -132,7 +132,7 @@ print(pythmath.percentage(20, 50))
 ```
 **Output:** 40.0
 
-# Array Sum:
+## Array Sum:
 It is a function that calculates the sum of numbers in a **1d Array**.
 
 **Example:**
