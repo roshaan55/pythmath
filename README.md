@@ -852,6 +852,8 @@ It is a function that calculates the variance from given dataset or list of valu
 **Note:** pop does not equivalent to stack pop.
 
 **Example:**
+
+**With v_mode="std"**
 ```py
 import pythmath
 
@@ -860,6 +862,16 @@ data = [2, 4, 6, 8, 10]
 print(pythmath.variance(data))
 ```
 **Output:** 10.0
+
+**With v_mode="pop"**
+```py
+import pythmath
+
+data = [2, 4, 6, 8, 10]
+
+print(pythmath.variance(data, v_mode="pop"))
+```
+**Output:** 8.0
 
 # Z Score:
 It is a function that calculates the z score value from x, mean value and from value of standard deviation.
