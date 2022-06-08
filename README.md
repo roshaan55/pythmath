@@ -145,7 +145,7 @@ print(pythmath.arr_sum(array))
 ```
 **Output:** 34
 
-# Array 2d Sum:
+## Array 2d Sum:
 It is a function to calculates the sum of numbers in a **2d Array**.
 
 **Example:**
@@ -161,7 +161,7 @@ print(pythmath.arr_2d_sum(array_2d))
 ```
 **Output:** 21
 
-# nCr:
+## nCr:
 It is a function that calculates the Combinations nCr from n a r values.
 
 **Example:**
@@ -175,7 +175,7 @@ print(pythmath.nCr(n, r))
 ```
 **Output:** 252.0
 
-# nPr:
+## nPr:
 It is a function that calculates Permutations nPr from n and r values.
 
 **Example:**
@@ -189,7 +189,7 @@ print(pythmath.nCr(n, r))
 ```
 **Output:** 20.0
 
-# Fibonacci Series:
+## Fibonacci Series:
 It is a function that generates the fibonacci series from n_terms. It takes three parameters **first**, **second** and **n_terms**.
 **n_terms:** Number of terms to generate fibonacci series, by default its value is **5** and it is optional. If you leave it by default it generates fibonacci series to **5 terms**.
 
@@ -201,7 +201,7 @@ print(pythmath.fibonacci(0, 2))
 ```
 **Output:** [0, 2, 2, 4, 6]
 
-# Multiply Two List:
+## Multiply Two List:
 It is a function that multiplies each number in two list **List 1** and **List 2** and returns a new multiplied list of these numbers.
 
 **Example:**
@@ -215,7 +215,7 @@ print(pythmath.mult_two_lst(x, y))
 ```
 **Output:** [5, 4, 12, 4]
 
-# Square of Two List:
+## Square of Two List:
 It is a function that squares each number in a list and returns a new squared list of these numbers.
 
 **Example:**
@@ -228,7 +228,7 @@ print(pythmath.square_lst(x))
 ```
 **Output:** [1, 4, 9, 16]
 
-# Powered List:
+## Powered List:
 It is a function that calculates the power of each number in a list and returns a new powered list of these numbers. It takes two parameters: **lst: List** and **pow_val**
 **pow_val:** Value of power to calculate the power of each number in a list, it is optional and by default its value is 2.
 
@@ -242,7 +242,7 @@ print(pythmath.pow_lst(x, 3))
 ```
 **Output:** [1, 8, 27, 64]
 
-# Sort List:
+## Sort List:
 It is function that sorts the elements in a list in ascending order. If the list is sorted it will print the message: **The list is already sorted!**
 
 **Example:**
@@ -259,7 +259,7 @@ print(pythmath.sort(lst))
 
 **Output of lst:** The list is already sorted!
 
-# Count List:
+## Count List:
 It is a function that counts how many numbers in a list.
 
 **Example:**
@@ -272,7 +272,7 @@ print(pythmath.count(results))
 ```
 **Output:** 5
 
-# Minimum in List:
+## Minimum in List:
 It is a function that finds the minimum value in a list.
 
 **Example:**
@@ -285,7 +285,7 @@ print(pythmath.minimum(lst))
 ```
 **Output:** 1
 
-# Maximum in a List:
+## Maximum in a List:
 It is a function that finds the maximum value in a list.
 
 **Example:**
@@ -298,7 +298,7 @@ print(pythmath.maximum(lst))
 ```
 **Output:** 5
 
-# Is Float:
+## Is Float:
 It is a function that checks whether the number is float or not and returns True if the number is float otherwise False.
 
 ```py
@@ -313,7 +313,7 @@ print(pythmath.isfloat(num2))
 **Output of num1:** True
 **Output of num2:** False
 
-# Positive or Negative Number:
+## Positive or Negative Number:
 It is a function that returns the positive number if the inputted number is negative and returns negative number if the inputted number is positive.
 
 ```py
@@ -752,8 +752,8 @@ print(pythmath.tanh(angle))
 ```
 **Output:** 1.0
 
-## Statistical Functions:
-# Mean:
+# Statistical Functions:
+## Mean:
 It is a function to calculate the mean of given dataset or list.
 **Mean:** In mathematics and statistics, the arithmetic mean or arithmetic average, or simply just the mean or the average, is the sum of a collection of numbers divided by the count of numbers in the collection.
 
@@ -767,7 +767,7 @@ print(pythmath.mean(numbers))
 ```
 **Output:** 3.0
 
-# Median:
+## Median:
 It is function that calculates median of given dataset or list.
 **Median:** In statistics and probability theory, the median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution. For a data set, it may be thought of as "the middle" value.
 
@@ -781,7 +781,7 @@ print(pythmath.median(numbers))
 ```
 **Output:** 3
 
-# Mode:
+## Mode:
 It is a function that gets the mode of given datasets or list.
 **Mode:** The mode is the value that appears most often in a set of data values. If X is a discrete random variable, the mode is the value x at which the probability mass function takes its maximum value. In other words, it is the value that is most likely to be sampled.
 
@@ -795,7 +795,7 @@ print(pythmath.mode(numbers))
 ```
 **Output:** 5
 
-# Standard Deviation:
+## Standard Deviation:
 It calculates the standard deviation from given dataset or list of numbers.
 **Standard Deviation:** In statistics, the standard deviation is a measure of the amount of variation or dispersion of a set of values. A low standard deviation indicates that the values tend to be close to the mean of the set, while a high standard deviation indicates that the values are spread out over a wider range.
 
@@ -809,7 +809,7 @@ print(pythmath.stdev(data))
 ```
 **Output:** 1.5811388300841898
 
-# Population Standard Deviation:
+## Population Standard Deviation:
 It is a function that calculates population standard deviation from given dataset or list of numbers.
 
 **Example:**
@@ -822,7 +822,7 @@ print(pythmath.pstdev(data))
 ```
 **Output:** 1.4142135623730951
 
-# Mean Absolute Deviation(MAD):
+## Mean Absolute Deviation(MAD):
 It is a function that calculates the mean absolute deviation from given dataset or list of numbers.
 **Mean Absolute Deviation:** The mean absolute deviation (MAD) is a measure of variability that indicates the average distance between observations and their mean. MAD uses the original units of the data, which simplifies interpretation. Larger values signify that the data points spread out further from the average. Conversely, lower values correspond to data points bunching closer to it. The mean absolute deviation is also known as the mean deviation and average absolute deviation.
 
@@ -836,7 +836,7 @@ print(pythmath.mad(data))
 ```
 **Output:** 1.2
 
-# Variance:
+## Variance:
 It is a function that calculates the variance from given dataset or list of values. it takes two parameters: **data: values of dataset** and **v_mode**.
 **v_mode:** Mode of variance either standard(std) or population(pop), it is optional and by default its mode is standard(std)
 **Note:** pop does not equivalent to stack pop.
@@ -863,7 +863,7 @@ print(pythmath.variance(data, v_mode="pop"))
 ```
 **Output:** 8.0
 
-# Z Score:
+## Z Score:
 It is a function that calculates the z score value from x, mean value and from value of standard deviation.
 **Z Score:** In statistics, the standard score is the number of standard deviations by which the value of a raw score is above or below the mean value of what is being observed or measured. Raw scores above the mean have positive standard scores, while those below the mean have negative standard scores.
 
@@ -879,7 +879,7 @@ print(pythmath.zscore(x, mean_val, st_dev))
 ```
 **Output:** 0.6666666666666666
 
-# Standard Error:
+## Standard Error:
 It is a function that calculates standard error from given dataset or from list of numbers.
 **Standard Error:** The standard error of a statistic is the standard deviation of its sampling distribution or an estimate of that standard deviation. If the statistic is the sample mean, it is called the standard error of the mean.
 
@@ -893,7 +893,7 @@ print(pythmath.stderr(data))
 ```
 **Output:** 2.782085548648711
 
-# Sampling Error:
+## Sampling Error:
 It is a function that calculates the sampling error. It takes three parameters: **n**, **pst_dev** and **conf**
 **n:** Size of sampling.
 **pst_dev:** Population Standard Deviation
@@ -910,7 +910,7 @@ print(pythmath.samp_err(n, pst_dev))
 ```
 **Output:** 0.01568
 
-# Statistical Range:
+## Statistical Range:
 It is a function that calculates the statistical range from given dataset or set of integer values.
 **Statistical Range:** In statistics, the range of a set of data is the difference between the largest and smallest values. Difference here is specific, the range of a set of data is the result of subtracting the sample maximum and minimum. However, in descriptive statistics, this concept of range has a more complex meaning.
 
@@ -924,7 +924,7 @@ print(pythmath.stats_range(lst))
 ```
 **Output:** 4
 
-# Mid Range:
+## Mid Range:
 It is a function that calculates the midpoint range from given dataset or set of integer values.
 **Mid Range:** In statistics, the mid-range or mid-extreme is a measure of central tendency of a sample defined as the arithmetic mean of the maximum and minimum values of the data set.
 
@@ -938,8 +938,8 @@ print(pythmath.midrange(lst))
 ```
 **Output:** 3.0
 
-## Error Functions:
-# Percentage Error:
+# Error Functions:
+## Percentage Error:
 It is a funcion that calculates the percentage error from measured value and true or real value.
 
 **Example:**
@@ -953,7 +953,7 @@ print(pythmath.perc_err(measured_val, true_val))
 ```
 **Output:** 20.0
 
-# Absolute Error:
+## Absolute Error:
 It is a function that calculates the absolute error from measured value and true or real value.
 
 **Example:**
@@ -967,7 +967,7 @@ print(pythmath.abs_err(measured_val, true_val))
 ```
 **Output:** 2
 
-# Relatable Error:
+## Relatable Error:
 It is a function that calculates the relatable error from measured value and true or real value.
 
 **Example:**
