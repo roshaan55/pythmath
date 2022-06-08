@@ -991,6 +991,6 @@ print(pythmath.rel_err(measured_val, true_val))
 ```
 **Output:** 0.2
 
-For more examples see [Examples](https://github.com/roshaan55/pythmath/blob/main/examples "Examples of funcions of pythmath").
+For more examples see [Examples](https://github.com/roshaan55/pythmath/blob/main/Examples "Examples of funcions of pythmath").
 
 
