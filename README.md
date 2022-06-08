@@ -337,16 +337,6 @@ print(pythmath.pos_neg(num4))
 
 **Output of num4:** 7.5
 
-**Example:**
-```py
-import pythmath
-
-lst = [1, 2, 3, 4, 5]
-
-print(pythmath.maximum(lst))
-```
-**Output:** 5
-
 # Basic Math Function Implementation:
 ## Absolute Function:
 It  is the function that gets the absolute value of x, if negative value it will be positive value.
