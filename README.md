@@ -987,7 +987,7 @@ import pythmath
 measured_val = 8
 true_val = 10
 
-print(pythmath.rel_err(measured_val, true_val))
+print(pythmath.rel_error(measured_val, true_val))
 ```
 **Output:** 0.2
 
