@@ -1,5 +1,5 @@
 # pythmath 0.2
-Advance Math Library which performs all the basic and scientific math operations such as cos, sin, tan etc
+Advance Math Library which performs all the basic and scientific math operations such as cos, sin, tan etc. New functions included in **pythmath 0.2** such as basic statistical functions(**Mean**, **Median**, **Mode**, **Standard Deviation**, **Mean Absolute Deviation(MAD)**, **Variance** etc...), error functions(**Percentage Error**, **Absolute Error**, **Relatable Error**)
 
 It is an advanced revised version of built-in math library which helps to perform math operations. It includes the area functions which calculates the **area of square**, **area of triangle**, **area of circle** and **area of rectangle**. **pythmath 0.1** includes functions which are as follows:
 
@@ -30,6 +30,8 @@ New updates includes error functions such as percentage error, absolute error an
 12) **Count List**
 13) **Minimum in List**
 14) **Maximum in List**
+15) **Is Float**
+16) **Positive or Negative**
 
 ## Basic Math Functions:
 1) **Absolute Function**
@@ -94,7 +96,7 @@ New updates includes error functions such as percentage error, absolute error an
 9) **Standard Error**
 10) **Sampling Error**
 11) **Statistical Range**
-12) **Midpoint Range**
+12) **Mid Range**
 
 ## Error Functions:
 1) **Percentage Error**
@@ -137,8 +139,8 @@ It is a function that calculates the sum of numbers in a **1d Array**.
 ```py
 import pythmath
 
-
 array = {12, 3, 4, 15}
+
 print(pythmath.arr_sum(array))
 ```
 **Output:** 34
@@ -150,11 +152,11 @@ It is a function to calculates the sum of numbers in a **2d Array**.
 ```py
 import pythmath
 
-
 array_2d = [[1, 2],
             [3, 4],
             [5, 6]
             ]
+
 print(pythmath.arr_2d_sum(array_2d))
 ```
 **Output:** 21
@@ -166,9 +168,9 @@ It is a function that calculates the Combinations nCr from n a r values.
 ```py
 import pythmath
 
-
 n = 10
 r = 5
+
 print(pythmath.nCr(n, r))
 ```
 **Output:** 252.0
@@ -180,9 +182,9 @@ It is a function that calculates Permutations nPr from n and r values.
 ```py
 import pythmath
 
-
 n = 5
 r = 2
+
 print(pythmath.nCr(n, r))
 ```
 **Output:** 20.0
@@ -194,7 +196,6 @@ It is a function that generates the fibonacci series from n_terms. It takes thre
 **Example:**
 ```py
 import pythmath
-
 
 print(pythmath.fibonacci(0, 2))
 ```
@@ -209,6 +210,7 @@ import pythmath
 
 x = [1, 2, 3, 4]
 y = [5, 2, 4, 1]
+
 print(pythmath.mult_two_lst(x, y))
 ```
 **Output:** [5, 4, 12, 4]
@@ -221,6 +223,7 @@ It is a function that squares each number in a list and returns a new squared li
 import pythmath
 
 x = [1, 2, 3, 4]
+
 print(pythmath.square_lst(x))
 ```
 **Output:** [1, 4, 9, 16]
@@ -234,6 +237,7 @@ It is a function that calculates the power of each number in a list and returns 
 import pythmath
 
 x = [1, 2, 3, 4]
+
 print(pythmath.pow_lst(x, 3))
 ```
 **Output:** [1, 8, 27, 64]
@@ -247,10 +251,12 @@ import pythmath
 
 my_list = [5, 10, 4, 3, 2, 17]
 lst = [1, 2, 3, 4, 5]
+
 print(pythmath.sort(my_list))
 print(pythmath.sort(lst))
 ```
 **Output of my_list:** [2, 3, 4, 5, 10, 17]
+
 **Output of lst:** The list is already sorted!
 
 # Count List:
@@ -260,8 +266,8 @@ It is a function that counts how many numbers in a list.
 ```py
 import pythmath
 
-
 results = [1, 2, 3, 4, 5]
+
 print(pythmath.count(results))
 ```
 **Output:** 5
@@ -274,6 +280,7 @@ It is a function that finds the minimum value in a list.
 import pythmath
 
 lst = [1, 2, 3, 4, 5]
+
 print(pythmath.minimum(lst))
 ```
 **Output:** 1
@@ -286,8 +293,59 @@ It is a function that finds the maximum value in a list.
 import pythmath
 
 lst = [1, 2, 3, 4, 5]
+
 print(pythmath.maximum(lst))
 ```
+**Output:** 5
+
+# Is Float:
+It is a function that checks whether the number is float or not and returns True if the number is float otherwise False.
+
+```py
+import pythmath
+
+num1 = 7.5
+num2 = 7
+
+print(pythmath.isfloat(num1))
+print(pythmath.isfloat(num2))
+```
+**Output of num1:** True
+**Output of num2:** False
+
+# Positive or Negative Number:
+It is a function that returns the positive number if the inputted number is negative and returns negative number if the inputted number is positive.
+
+```py
+import pythmath
+
+num1 = -7
+num2 = 7
+num3 = 7.5
+num4 = -7.5
+
+print(pythmath.pos_neg(num1))
+print(pythmath.pos_neg(num2))
+print(pythmath.pos_neg(num3))
+print(pythmath.pos_neg(num4))
+```
+**Output of num1:** 7
+
+**Output of num2:** -7
+
+**Output of num3:** -7.5
+
+**Output of num4:** 7.5
+
+**Example:**
+```py
+import pythmath
+
+lst = [1, 2, 3, 4, 5]
+
+print(pythmath.maximum(lst))
+```
+**Output:** 5
 
 # Basic Math Function Implementation:
 ## Absolute Function:
@@ -298,6 +356,7 @@ It  is the function that gets the absolute value of x, if negative value it will
 import pythmath
 
 num = -7
+
 print(pythmath.absolute(num))
 ```
 **Output:** 7
@@ -310,6 +369,7 @@ It is a function that finds the square root of any number.
 import pythmath
 
 num = 25
+
 print(pythmath.square_root(num))
 ```
 **Output:** 5
@@ -322,6 +382,7 @@ It is a function that finds the cube root of a number.
 import pythmath
 
 num = 27
+
 print(pythmath.cube_root(num))
 ```
 **Output:** 3
@@ -815,6 +876,108 @@ st_dev = 15
 print(pythmath.zscore(x, mean_val, st_dev))
 ```
 **Output:** 0.6666666666666666
+
+# Standard Error:
+It is a function that calculates standard error from given dataset or from list of numbers.
+**Standard Error:** The standard error of a statistic is the standard deviation of its sampling distribution or an estimate of that standard deviation. If the statistic is the sample mean, it is called the standard error of the mean.
+
+**Example:**
+```py
+import pythmath
+
+data = [10, 12, 16, 21, 25]
+
+print(pythmath.stderr(data))
+```
+**Output:** 2.782085548648711
+
+# Sampling Error:
+It is a function that calculates the sampling error. It takes three parameters: **n**, **pst_dev** and **conf**
+**n:** Size of sampling.
+**pst_dev:** Population Standard Deviation
+**conf:** Confidence level approx 1.96, it is optional and by default its value is set 1.96
+
+**Example:**
+```py
+import pythmath
+
+n = 2500
+pst_dev = 0.40
+
+print(pythmath.samp_err(n, pst_dev))
+```
+**Output:** 0.01568
+
+# Statistical Range:
+It is a function that calculates the statistical range from given dataset or set of integer values.
+**Statistical Range:** In statistics, the range of a set of data is the difference between the largest and smallest values. Difference here is specific, the range of a set of data is the result of subtracting the sample maximum and minimum. However, in descriptive statistics, this concept of range has a more complex meaning.
+
+**Example:**
+```py
+import pythmath
+
+lst = [1, 2, 3, 4, 5]
+
+print(pythmath.stats_range(lst))
+```
+**Output:** 4
+
+# Mid Range:
+It is a function that calculates the midpoint range from given dataset or set of integer values.
+**Mid Range:** In statistics, the mid-range or mid-extreme is a measure of central tendency of a sample defined as the arithmetic mean of the maximum and minimum values of the data set.
+
+**Example:**
+```py
+import pythmath
+
+lst = [1, 2, 3, 4, 5]
+
+print(pythmath.midrange(lst))
+```
+**Output:** 3.0
+
+## Error Functions:
+# Percentage Error:
+It is a funcion that calculates the percentage error from measured value and true or real value.
+
+**Example:**
+```py
+import pythmath
+
+measured_val = 8
+true_val = 10
+
+print(pythmath.perc_err(measured_val, true_val))
+```
+**Output:** 20.0
+
+# Absolute Error:
+It is a function that calculates the absolute error from measured value and true or real value.
+
+**Example:**
+```py
+import pythmath
+
+measured_val = 8
+true_val = 10
+
+print(pythmath.abs_err(measured_val, true_val))
+```
+**Output:** 2
+
+# Relatable Error:
+It is a function that calculates the relatable error from measured value and true or real value.
+
+**Example:**
+```py
+import pythmath
+
+measured_val = 8
+true_val = 10
+
+print(pythmath.rel_err(measured_val, true_val))
+```
+**Output:** 0.2
 
 For more examples see [Examples](https://github.com/roshaan55/pythmath/blob/main/examples "Examples of funcions of pythmath").
 
