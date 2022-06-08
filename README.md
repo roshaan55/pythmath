@@ -486,8 +486,8 @@ print(pythmath.ceil(a))
 
 For more basic math functions see [Examples/Basic Math Functions](https://github.com/roshaan55/pythmath/tree/main/Examples/Basic%20Math%20Funcions "Examples of basic math functions").
 
-## Area Functions:
-# Area of Rectangle Function:
+# Area Functions:
+## Area of Rectangle Function:
 It is a function that calculates the area of rectangle.
 
 **Example:**
@@ -556,8 +556,8 @@ print(pythmath.area_circle(radius))
 ```
 **Output:** 78.53981633974483
 
-## Trignometric Functions:
-# Sin(x) Function:
+# Trignometric Functions:
+## Sin(x) Function:
 It is function to calculate sine of x or any number in radians.
 
 **Example:**
