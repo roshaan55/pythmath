@@ -15,23 +15,21 @@ pip install --upgrade pythmath
 New upadate **pythmath 0.2** includes new functions such as statistical functions(mean, median, mode, variance) etc and other maths functions.
 New updates includes error functions such as percentage error, absolute error and relatable error.
 
+New math functions and statistic functions added in recent revised version of **pthmath 0.2** version **pythmath 0.2.1** which are **nth Root**, **Harmonic Mean**, **Geometric Mean**, **Median Absolute Deviation**, **Multiply a list**, **Covariance**, **List Prime Factors**, **List of Prime Numbers**, **List of Odd Numbers**, **List of Even Numbers**. 
+
 ## New Math Functions:
-1) **Is Sorted**
-2) **Percentage**
-3) **Array Sum**
-4) **Array 2d Sum**
-5) **nCr**
-6) **nPr**
-7) **Fibonacci Series Function**
-8) **Multiply Two List**
-9) **Square of List**
-10) **Powerd List**
-11) **Sort List**
-12) **Count List**
-13) **Minimum in List**
-14) **Maximum in List**
-15) **Is Float**
-16) **Positive or Negative**
+1) **nth Root**
+2) **Multiply a list**
+3) **List of Prime Factors**
+4) **List of Prime Numbers**
+5) **List of Odd Numbers**
+6) **List of Even Numbers**
+
+## New Statistics Functions:
+1) **Harmonic Mean**
+2) **Geometric Mean**
+3) **Mean Absolute Deviation**
+4) **Covariance**
 
 ## Basic Math Functions:
 1) **Absolute Function**
@@ -57,6 +55,22 @@ New updates includes error functions such as percentage error, absolute error an
 21) **Is Positive Function**
 22) **Is Negative Function**
 23) **Is Zero Function**
+24) **Is Sorted**
+25) **Percentage**
+26) **Array Sum**
+27) **Array 2d Sum**
+28) **nCr**
+29) **nPr**
+30) **Fibonacci Series Function**
+31) **Multiply Two List**
+32) **Square of List**
+33) **Powerd List**
+34) **Sort List**
+35) **Count List**
+36) **Minimum in List**
+37) **Maximum in List**
+38) **Is Float**
+39) **Positive or Negative**
 
 ## Area Functions
 1) **Area of Rectangle Function**
@@ -104,6 +118,173 @@ New updates includes error functions such as percentage error, absolute error an
 3) **Relatable Error**
 
 # New Math Functions:
+## nth Root:
+It is a function that calculates the n under root or root of nth number.
+
+**Example:**
+```py
+import pythmath
+
+num = 81
+n = 4
+
+print(pythmath.nth_root(num, n))
+```
+**Output:** 3.0
+
+# New Statistics Functions:
+## Harmonic Mean:
+It is a function that calculates the harmonic mean from given dataset, list of numbers or tuple of numbers.
+
+**Harmonic Mean:** Harmonic Mean: In mathematics, the harmonic mean is one of several kinds of average, and in particular, one of the Pythagorean means. It is sometimes appropriate for situations when the average rate is desired.
+
+# Basic Math Function Implementation:
+## Absolute Function:
+It  is the function that gets the absolute value of x, if negative value it will be positive value.
+
+**Example:**
+```py
+import pythmath
+
+num = -7
+
+print(pythmath.absolute(num))
+```
+**Output:** 7
+
+## Square Root Function:
+It is a function that finds the square root of any number.
+
+**Example:**
+```py
+import pythmath
+
+num = 25
+
+print(pythmath.square_root(num))
+```
+**Output:** 5
+
+## Cube Root Function:
+It is a function that finds the cube root of a number.
+
+**Example:**
+```py
+import pythmath
+
+num = 27
+
+print(pythmath.cube_root(num))
+```
+**Output:** 3
+
+## LCM Function:
+It is a function that calculates the least common multiple of two numbers
+
+**Example:**
+```py
+import pythmath
+
+a = 10
+b = 18
+
+print(pythmath.calc_lcm(a, b))
+```
+**Output:** 90.0
+
+## GCD Function:
+It is a function that calculates the greatest common divisor of two numbers.
+
+**Example**
+```py
+import pythmath
+
+a = 20
+b = 18
+
+print(pythmath.calc_gcd(a, b))
+```
+**Output:** 2.0
+
+## Factorial Function:
+It is a function that calculates the factorial of number.
+
+**Example:**
+```py
+import pythmath
+
+num = 4
+
+print(pythmath.fact(num))
+```
+**Output:** 24.0
+
+## Integer Square Root Function:
+It is a function to get the integer part of square root of a number.
+
+**Examples:**
+```py
+import pythmath
+
+a = 20
+
+print(pythmath.intsqrt(a))
+```
+**Output:** 4
+
+## Integer Cube Root Function:
+It is a function to get the integer part of cube root of a number
+
+**Example**
+```py
+import pythmath
+
+a = 20
+
+print(pythmath.intcbrt(a))
+```
+**Output**: 2
+
+## Hypotenuse Function:
+It is function that calculates the hypotenuse of two numbers.
+
+**Example:**
+```py
+import pythmath
+
+a = 3
+b = 4
+
+print(pythmath.hypotenuse(a, b))
+```
+**Output:** 5.0
+
+## Floor Function:
+It is the function that gets the exact floored value, for example the number is 3.4 it will get 3
+
+**Example:**
+```py
+import pythmath
+
+a = 3.7
+
+print(pythmath.floor(a))
+```
+**Output:** 3
+
+## Ceil Function
+It is function that ceil the number.
+
+**Example:**
+```py
+import pythmath
+
+a = 3.7
+
+print(pythmath.ceil(a))
+```
+**Output:** 4
+
 ## Is Sorted:
 It is the function to check whether the list is sorted or not, if a list is sorted it will return **True** otherwise **False**.
 
@@ -336,153 +517,6 @@ print(pythmath.pos_neg(num4))
 **Output of num3:** -7.5
 
 **Output of num4:** 7.5
-
-# Basic Math Function Implementation:
-## Absolute Function:
-It  is the function that gets the absolute value of x, if negative value it will be positive value.
-
-**Example:**
-```py
-import pythmath
-
-num = -7
-
-print(pythmath.absolute(num))
-```
-**Output:** 7
-
-## Square Root Function:
-It is a function that finds the square root of any number.
-
-**Example:**
-```py
-import pythmath
-
-num = 25
-
-print(pythmath.square_root(num))
-```
-**Output:** 5
-
-## Cube Root Function:
-It is a function that finds the cube root of a number.
-
-**Example:**
-```py
-import pythmath
-
-num = 27
-
-print(pythmath.cube_root(num))
-```
-**Output:** 3
-
-## LCM Function:
-It is a function that calculates the least common multiple of two numbers
-
-**Example:**
-```py
-import pythmath
-
-a = 10
-b = 18
-
-print(pythmath.calc_lcm(a, b))
-```
-**Output:** 90.0
-
-## GCD Function:
-It is a function that calculates the greatest common divisor of two numbers.
-
-**Example**
-```py
-import pythmath
-
-a = 20
-b = 18
-
-print(pythmath.calc_gcd(a, b))
-```
-**Output:** 2.0
-
-## Factorial Function:
-It is a function that calculates the factorial of number.
-
-**Example:**
-```py
-import pythmath
-
-num = 4
-
-print(pythmath.fact(num))
-```
-**Output:** 24.0
-
-## Integer Square Root Function:
-It is a function to get the integer part of square root of a number.
-
-**Examples:**
-```py
-import pythmath
-
-a = 20
-
-print(pythmath.intsqrt(a))
-```
-**Output:** 4
-
-## Integer Cube Root Function:
-It is a function to get the integer part of cube root of a number
-
-**Example**
-```py
-import pythmath
-
-a = 20
-
-print(pythmath.intcbrt(a))
-```
-**Output**: 2
-
-## Hypotenuse Function:
-It is function that calculates the hypotenuse of two numbers.
-
-**Example:**
-```py
-import pythmath
-
-a = 3
-b = 4
-
-print(pythmath.hypotenuse(a, b))
-```
-**Output:** 5.0
-
-## Floor Function:
-It is the function that gets the exact floored value, for example the number is 3.4 it will get 3
-
-**Example:**
-```py
-import pythmath
-
-a = 3.7
-
-print(pythmath.floor(a))
-```
-**Output:** 3
-
-## Ceil Function
-It is function that ceil the number.
-
-**Example:**
-```py
-import pythmath
-
-a = 3.7
-
-print(pythmath.ceil(a))
-```
-**Output:** 4
 
 For more basic math functions see [Examples/Basic Math Functions](https://github.com/roshaan55/pythmath/tree/main/Examples/Basic%20Math%20Funcions "Examples of basic math functions").
 
