@@ -1009,7 +1009,7 @@ import pythmath
 
 data = [1, 2, 3, 4, 5]
 
-print(pythmath.mad(data))
+print(pythmath.mean_abs_dev(data))
 ```
 **Output:** 1.2
 
