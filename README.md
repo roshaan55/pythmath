@@ -28,7 +28,7 @@ New math functions and statistic functions added in recent revised version of **
 ## New Statistics Functions:
 1) **Harmonic Mean**
 2) **Geometric Mean**
-3) **Mean Absolute Deviation**
+3) **Median Absolute Deviation**
 4) **Covariance**
 
 ## Basic Math Functions:
@@ -132,11 +132,154 @@ print(pythmath.nth_root(num, n))
 ```
 **Output:** 3.0
 
+## Multiply a List:
+It is a function that multiplies numbers of a list.
+
+**Example:**
+```py
+import pythmath
+
+list1 = [1, 2, 3]
+list2 = [3, 2, 4]
+
+print(pythmath.multiply_lst(list1))
+print(pythmath.multiply_lst(list2))
+```
+**Output of list1:** 6
+
+**Output of list2:** 24
+
+## List of Prime Factors:
+It is a function that gets the prime factors of a number, if a number is 100 it will get [2, 2, 5, 5].
+
+**Prime Factors:** prime factor is finding which prime numbers multiply together to make the original number.
+
+**Example:**
+```py
+import pythmath
+
+num = 100
+
+print(pythmath.prime_factors(num))
+```
+**Output:** [2, 2, 5, 5]
+
+## List of Prime Numbers:
+It is a function that generates a list of prime numbers from starting range to ending range.
+
+**Example:**
+```py
+import pythmath
+
+start = 1
+end = 20
+
+print(pythmath.prime_numbers(start, end))
+```
+**Output:** [1, 2, 3, 5, 7, 11, 13, 17, 19]
+
+## List of Even Numbers:
+It is a function that generates a list of even numbers from starting range to ending range.
+
+**Example:**
+```py
+import pythmath
+
+start = 1
+end = 20
+
+print(pythmath.even_numbers(start, end))
+```
+**Output:** [1, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+## List of Odd Numbers:
+It is a function that generates a list of odd numbers from starting range to ending range.
+
+**Example:**
+```py
+import pythmath
+
+start = 1
+end = 20
+
+print(pythmath.odd_numbers(start, end))
+```
+**Output:** [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
 # New Statistics Functions:
 ## Harmonic Mean:
 It is a function that calculates the harmonic mean from given dataset, list of numbers or tuple of numbers.
 
-**Harmonic Mean:** Harmonic Mean: In mathematics, the harmonic mean is one of several kinds of average, and in particular, one of the Pythagorean means. It is sometimes appropriate for situations when the average rate is desired.
+**Harmonic Mean:** In mathematics, the harmonic mean is one of several kinds of average, and in particular, one of the Pythagorean means. It is sometimes appropriate for situations when the average rate is desired.
+
+**Example:**
+```py
+import pythmath
+
+data = [6, 7, 3, 9, 10, 15]
+
+print(pythmath.harmonic_mean(data))
+```
+**Output:** 6.517241379310345
+
+## Geometric Mean:
+It is a function that calculates the geometric mean from given dataset, list of numbers or tuple of numbers.
+
+**Geometric Mean:** In statistics, the geometric mean is calculated by raising the product of a series of numbers to the inverse of the total length of the series. The geometric mean is most useful when numbers in the series are not independent of each other or if numbers tend to make large fluctuations.
+
+**Example:**
+```py
+import pythmath
+
+data = [1, 2, 3, 4, 5]
+
+print(pythmath.geometric_mean(data))
+```
+**Output:** 2.605171084697352
+
+## Median Absolute Deviation:
+It is a function that calculates the median absolute deviation from a given dataset, list of numbers or tuple of numbers.
+
+**Median Absolute Deviation:** In statistics, the median absolute deviation is a robust measure of the variability of a univariate sample of quantitative data. It can also refer to the population parameter that is estimated by the MAD calculated from a sample.
+
+**Example:**
+```py
+import pythmath
+
+data = [1, 2, 3, 4, 5]
+
+print(pythmath.median_abs_dev([1, 2, 3, 4, 5]))
+```
+**Output:** 1.0
+
+## Covariance:
+It is a function that calculates the covariance from two datasets or lists of numbers x and y. It takes three parameters: **x: values of dataset x**, **y: values of dataset y** and **cov_mode: mode of covariance either sample(samp) or population(pop), by default it is sample**
+
+**Covariance:** In probability theory and statistics, covariance is a measure of the joint variability of two random variables. If the greater values of one variable mainly correspond with the greater values of the other variable, and the same holds for the lesser values, the covariance is positive.
+
+**Example:**
+
+**With cov_mode=samp**
+```py
+import pythmath
+
+x = [1, 2, 3, 4]
+y = [5, 6, 7, 8]
+
+print(pythmath.covariance(x, y, cov_mode="samp"))
+```
+**Output:** 1.6666666666666667
+
+**With cov_mode=pop**
+```py
+import pythmath
+
+x = [1, 2, 3, 4]
+y = [5, 6, 7, 8]
+
+print(pythmath.covariance(x, y, cov_mode="pop"))
+```
+**Output:** 1.25
 
 # Basic Math Function Implementation:
 ## Absolute Function:
