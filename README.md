@@ -3,6 +3,13 @@ Advance Math Library which performs all the basic and scientific math operations
 
 It is an advanced revised version of built-in math library which helps to perform math operations. It includes the area functions which calculates the **area of square**, **area of triangle**, **area of circle** and **area of rectangle**. **pythmath 0.1** includes functions which are as follows:
 
+New upadate **pythmath 0.2** includes new functions such as statistical functions(mean, median, mode, variance) etc and other maths functions.
+New updates includes error functions such as percentage error, absolute error and relatable error.
+
+New math functions and statistic functions added in recent revised version of **pthmath 0.2** version **pythmath 0.2.1** which are **nth Root**, **Harmonic Mean**, **Geometric Mean**, **Median Absolute Deviation**, **Multiply a list**, **Covariance**, **List Prime Factors**, **List of Prime Numbers**, **List of Odd Numbers**, **List of Even Numbers**.
+
+New functions added in new update **pythmath 0.2.2** which are **Quadratic Equation**, **List of factors of a numbers**, **Angle Formula**, **Arc Lengnth(Radians)**, **Arc Length(Degrees)** and **Average Rate of Change**. It also includes fraction functions **Fraction**, **Fraction to Float** and **Float to Fraction**.
+
 ## Installation:
 ```nano
 pip install pythmath
@@ -12,10 +19,18 @@ pip install pythmath
 pip install --upgrade pythmath
 ```
 
-New upadate **pythmath 0.2** includes new functions such as statistical functions(mean, median, mode, variance) etc and other maths functions.
-New updates includes error functions such as percentage error, absolute error and relatable error.
+## New Functions:
+1) **Quadratic Equation**
+2) **List of Factors of a Number**
+3) **Angle Formula**
+4) **Arc Length(Radians)**
+5) **Arc Length(Degrees)**
+6) **Average Rate of Change**
 
-New math functions and statistic functions added in recent revised version of **pthmath 0.2** version **pythmath 0.2.1** which are **nth Root**, **Harmonic Mean**, **Geometric Mean**, **Median Absolute Deviation**, **Multiply a list**, **Covariance**, **List Prime Factors**, **List of Prime Numbers**, **List of Odd Numbers**, **List of Even Numbers**. 
+## Fraction Functions:
+1) **Fraction**
+2) **Fraction to Float**
+3) **Float to Fraction**
 
 ## New Math Functions:
 1) **nth Root**
@@ -116,6 +131,177 @@ New math functions and statistic functions added in recent revised version of **
 1) **Percentage Error**
 2) **Absolute Error**
 3) **Relatable Error**
+
+# New Functions:
+## Quadratic Equation:
+It is a function that solves the quadratic equation and gets the roots of a quadratic equation.
+
+**Quadratic Equation:** In algebra, a quadratic equation is any equation that can be rearranged in standard form as where x represents an unknown, and a, b, and c represent known numbers, where a ≠ 0. If a = 0, then the equation is linear, not quadratic, as there is no ax^2 term.
+
+**Example:**
+```py
+import pythmath
+
+# One Double Root
+a = 1
+b = 4
+c = 4
+
+# Two Distinct Real Roots
+a1 = 1.5
+b1 = -2
+c1 = -8.6
+
+# Two Complex roots
+a2 = -1
+b2 = -1
+c2 = -1
+
+print(pythmath.quad_eqn(a, b, c))
+print(pythmath.quad_eqn(a1, b1, c1))
+print(pythmath.quad_eqn(a2, b2, c2))
+```
+**Output:** The function has one double root: -2.0
+
+**Output:** The function has two distinct real roots: 7.092405564692173 and -4.092405564692174
+
+**Output:** The function has two complex (conjugate) roots: (-0.5-0.8660254037844386j) and (-0.5+0.8660254037844386j)
+
+## List of Factors of a Number:
+It is a function that factorise a number 'x' and returns the list of factors of 'x'.
+
+**Example:**
+```py
+import pythmath
+
+num = 100
+
+print(pythmath.num_factors(num))
+```
+**Output:** [1, 2, 4, 5, 10, 20, 25, 50, 100]
+
+## Angle Formula:
+It is a function that calculates the angle from arc length and radius, it basically uses central angle formula.
+
+**Arc Length:** Arc length is the distance between two points along a section of a curve. Determining the length of an irregular arc segment by approximating the arc segment as connected line segments is also called rectification of a curve.
+
+**Example:**
+```py
+import pythmath
+
+arc_len = 5 * pythmath.pi
+radius = 6
+
+print(pythmath.angle(arc_len, radius))
+```
+**Output:** 150.0
+
+## Arc Length(Radians):
+It is a function that calculates the arc length from angle (in radians) and radius.
+
+**Arc Length:** Arc length is the distance between two points along a section of a curve. Determining the length of an irregular arc segment by approximating the arc segment as connected line segments is also called rectification of a curve.
+
+**Example:**
+```py
+import pythmath
+
+angle = 0.698132
+radius = 8
+
+print(pythmath.arc_length(angle, radius))
+```
+**Output:** 5.585056
+
+## Arc Length(Degrees):
+It is a function that calculates the arc length from angle (in degrees) and radius.
+
+**Arc Length:** Arc length is the distance between two points along a section of a curve. Determining the length of an irregular arc segment by approximating the arc segment as connected line segments is also called rectification of a curve.
+
+**Example:**
+```py
+import pythmath
+
+angle = 40
+radius = 8
+
+print(pythmath.arc_length_deg(angle, radius))
+```
+**Output:** 5.585053606381854
+
+## Average Rate of Change:
+It is a function that calculates the average rate of change from f(a) and f(b) calculated from a general function f(x).
+
+**Average Rate of Change:** The Average Rate of Change function is defined as the average rate at which one quantity is changing with respect to something else changing. In simple terms, an average rate of change function is a process that calculates the amount of change in one item divided by the corresponding amount of change in another.
+
+**Example:**
+```py
+import pythmath
+
+a = 5
+b = 8
+funct_a = f(a)
+funct_b = f(b)
+
+print(pythmath.avg_rate_change(funct_a, funct_b, a, b))
+```
+**Output:** 3.0
+
+# Fraction Functions:
+## Fraction:
+It is a function that takes numerator and denominator as input and returns proper fraction or improper fraction or a simplified fraction.
+
+**Proper Fraction:** A fraction where the numerator is less than the denominator, then it is known as a proper fraction.
+
+**Improper Fraction:** A fraction where the numerator is greater than the denominator, then it is known as an improper fraction.
+
+**Example:**
+```py
+import pythmath
+
+numer = 25
+denom = 100
+
+print(pythmath.fraction(numer, denom))
+```
+**Output:** 1/4
+
+## Fraction to Float:
+It is a function that converts the proper fraction, improper fraction and mixed fraction to exact floating number.
+
+**Proper Fraction:** A fraction where the numerator is less than the denominator, then it is known as a proper fraction.
+
+**Improper Fraction:** A fraction where the numerator is greater than the denominator, then it is known as an improper fraction.
+
+**Mixed Fraction:** A mixed fraction is the combination of a natural number and fraction. It is basically an improper fraction.
+
+**Example:**
+```py
+import pythmath
+
+frac_str = "2 2/5"
+
+print(pythmath.fraction_to_float(frac_str))
+```
+**Output:** 2.4
+
+## Float to Fraction:
+It is a function that converts an exact floating number to proper fraction or improper fraction.
+
+**Proper Fraction:** A fraction where the numerator is less than the denominator, then it is known as a proper fraction.
+
+**Improper Fraction:** A fraction where the numerator is greater than the denominator, then it is known as an improper fraction.
+
+**Mixed Fraction:** A mixed fraction is the combination of a natural number and fraction. It is basically an improper fraction.
+
+**Example:**
+```py
+import pythmath
+
+flt_num = 0.5
+
+print(pythmath.float_to_frac(flt_num))
+```
+**Output:** 2.4
 
 # New Math Functions:
 ## nth Root:
