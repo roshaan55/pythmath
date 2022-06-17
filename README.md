@@ -10,6 +10,8 @@ New math functions and statistic functions added in recent revised version of **
 
 New functions added in new update **pythmath 0.2.2** which are **Quadratic Equation**, **List of factors of a numbers**, **Angle Formula**, **Arc Lengnth(Radians)**, **Arc Length(Degrees)** and **Average Rate of Change**. It also includes fraction functions **Fraction**, **Fraction to Float** and **Float to Fraction**.
 
+**pythmath 0.2.3:** New gemoetric functions added and it also includes line functions **Slope**, **Distance of Line**, **Equation of Line**, **Midpoint** and **Y Intercept**
+
 ## Installation:
 ```nano
 pip install pythmath
@@ -18,6 +20,31 @@ pip install pythmath
 ```nano
 pip install --upgrade pythmath
 ```
+
+## New Geometric Functions:
+1) **Volume of Cone**
+2) **Surface Area of Cube**
+3) **Volume of cube**
+4) **Surface Area of Cuboid**
+5) **Volume of cuboid**
+6) **Perimeter of Square**
+7) **Surface Area of Sphere**
+8) **Volume of Sphere**
+9) **Perimeter of Parallelogram**
+10) **Area of Parallelogram**
+11) **Circumference of Circle**
+12) **Surface Area of Cylinder**
+13) **Volume of Cylinder**
+14) **Area of Trapezoid**
+15) **Perimeter of Right angle Triangle**
+16) **Perimeter of Triangle**
+
+## Line Functions:
+1) **Slope**
+2) **Distance of Line**
+3) **Equation of Line**
+4) **Midpoint**
+5) **Y Intercept**
 
 ## New Functions:
 1) **Quadratic Equation**
@@ -87,7 +114,7 @@ pip install --upgrade pythmath
 38) **Is Float**
 39) **Positive or Negative**
 
-## Area Functions
+## Geometric Functions
 1) **Area of Rectangle Function**
 2) **Area of Triangle Function**
 3) **Area of Square Function**
@@ -131,6 +158,312 @@ pip install --upgrade pythmath
 1) **Percentage Error**
 2) **Absolute Error**
 3) **Relatable Error**
+
+# New Geometric Functions:
+## Volume of Cone:
+It is a function that calculates the volume of a cone from values of radius and height.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+radius = 12
+height = 5
+
+print(volume_cone(r, h))
+```
+**Output:** 753.9822368615504
+
+## Surface Area of Cube:
+It is a function that calculates the surface area of a cube.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+a = 12
+
+print(surf_area_cube(a))
+```
+**Output:** 864
+
+## Volume of Cube:
+It is a function that calculates the volume of a cube.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+a = 12
+
+print(volume_cube(a))
+```
+**Output:** 1728
+
+## Surface Area of Cuboid:
+It is a function that calculates the surface area of a cuboid from values of length, base and height.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+l=5
+b=6
+h=7
+
+print(surf_area_cuboid(l, b, h))
+```
+**Output:** 214
+
+## Volume of Cuboid:
+It is a function that calculates the volume of a cuboid from values of length, base and height.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+l=4
+b=5
+h=6
+
+print(volume_cuboid(l, b, h))
+```
+**Output:** 120
+
+## Perimeter of Square:
+It is a function that calculates the perimeter of square from a side of square.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+a = 12
+
+print(perimeter_square(a))
+```
+**Output:** 48
+
+## Surface Area of Sphere:
+It is a function that calculates the surface area of sphere from value of radius.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+r = 12
+
+print(surf_area_sphere(12))
+```
+**Output:** 1809.5573684677208
+
+## Volume of Sphere:
+It is a function that calculates volume of a sphere from value of radius.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+r = 12
+
+print(volume_sphere(12))
+```
+**Output:** 7238.229473870882
+
+## Perimeter of Parallelogram:
+It is a function that calculates the perimeter of a parallelogram.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+a = 12
+b = 14
+
+print(perimeter_parallelo(a, b))
+```
+**Output:** 52
+
+## Area of Parallelogram:
+It is a function that calculates the area of a parallelogram.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+b = 12
+h = 14
+
+print(area_parallelo(b, h))
+```
+**Output:** 168
+
+## Circumference of Circle:
+It is a function that calculates the circumference of a circle from given radius.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+r = 12
+
+print(circle_circum(r))
+```
+**Output:** 75.39822368615503
+
+## Surface Area of Cylinder:
+It is a function that calculates the surface area of a cylinder from values of radius and height.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+r = 10
+h = 12
+
+print(surf_area_cylinder(r, h))
+```
+**Output:** 1382.300767579509
+
+## Volume of Cylinder:
+It is a function that calculates the volume of a cylinder from values of radius and height.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+r = 10
+h = 12
+
+print(volume_cylinder(r, h))
+```
+**Output:** 3769.9111843077517
+
+## Area of Trapezoid:
+It is a function that calculates the area of trapezoid.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+a = 4
+b = 5
+h = 10
+
+print(area_trapezoid(a, b, h))
+```
+**Output:** 45.0
+
+## Perimeter of Right Angle Triangle:
+It is a function that calculates the perimeter of a right angle triangle.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+a = 3
+b = 4
+
+print(p_right_triangle(a, b))
+```
+**Output:** 12.0
+
+## Perimeter of Triangle:
+It is a function that calculates the perimeter of a triangle.
+
+**Example:**
+```py
+import pythmath.geometry import *
+
+a = 12
+b = 13
+c = 14
+
+print(perimeter_triangle(12, 13, 14))
+```
+**Output:** 39
+
+# Line Functions:
+## Slope:
+It is a function that calculates the slope of a line from x and y coordinates.
+
+**Slope of Line:** The slope of a line is defined as the change in y coordinate with respect to the change in xcoordinate of that line. The net change in y coordinate is Δy, while the net change in the x coordinate is Δx.
+
+**Example:**
+```py
+import pythmath.lines import *
+
+x = [4, 8]
+y = [5, 10]
+
+print(slope(x, y))
+```
+**Output:** 1.25
+
+## Distance of Line:
+It is a function that calculates the distance from a point to a line from x and y coordinates.
+
+**Distance of Line:** In Euclidean geometry, the distance from a point to a line is the shortest distance from a given point to any point on an infinite straight line. It is the perpendicular distance of the point to the line, the length of the line segment which joins the point to nearest point on the line.
+
+**Example:**
+```py
+import pythmath.lines import *
+
+x = [4, 8]  # x1, x2
+y = [5, 10]  # y1, y2
+
+print(line_dist(x, y))
+```
+**Output:** 6.4031242374328485
+
+## Equation of Line:
+It is a function that makes the equation of line from x and y coordinates.
+
+**Formula:** y = mx + c
+
+**Equation of Line:** The general equation of a straight line is y = mx + c, where m is the slope of the line and c is the y-intercept. It is the most common form of the equation of a straight line that is used in geometry. The equation of a straight line can be written in different forms such as point-slope form, slope-intercept form, general form, standard form, etc. A straight line is a two-dimensional geometrical entity that extends on both its ends till infinity.
+
+**Example:**
+```py
+import pythmath.lines import *
+
+x = [4, 8]  # x1, x2
+y = [5, 10]  # y1, y2
+
+print(line_eqn(x, y))
+```
+**Output:** y = 1.25x + 0.0
+
+## Midpoint:
+It is a function that calculates the midpoint or middle point of a line from x and y coordinates.
+
+**Midpoint:** In geometry, the midpoint is the middle point of a line segment. It is equidistant from both endpoints, and it is the centroid both of the segment and of the endpoints. It bisects the segment.
+
+**Example:**
+```py
+import pythmath.lines import *
+
+x = [4, 8]  # x1, x2
+y = [5, 10]  # y1, y2
+
+print(midpoint(x, y))
+```
+**Output:** (6.0, 7.5)
+
+## Y Intercept:
+It is a function that gets the y intercept from x and y coordinates.
+
+**Y Intercept:** The y-intercept is the point where the graph intersects the y-axis. To graph, any function that is of the form y = f(x) finding the intercepts is really important. There are two types of intercepts that a function can have. They are the x-intercept and the y-intercept. An intercept of a function is a point where the graph of the function cuts the axis.
+
+**Example:**
+```py
+import pythmath.lines import *
+
+x = [4, 8]  # x1, x2
+y = [5, 10]  # y1, y2
+
+print(y_intercept(x, y))
+```
+**Output:** 0.0
 
 # New Functions:
 ## Quadratic Equation:
@@ -849,7 +1182,7 @@ print(pythmath.pos_neg(num4))
 
 For more basic math functions see [Examples/Basic Math Functions](https://github.com/roshaan55/pythmath/tree/main/Examples/Basic%20Math%20Funcions "Examples of basic math functions").
 
-# Area Functions:
+# Gemoetric Functions:
 ## Area of Rectangle Function:
 It is a function that calculates the area of rectangle.
 
