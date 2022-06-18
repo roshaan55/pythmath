@@ -165,7 +165,7 @@ It is a function that calculates the volume of a cone from values of radius and 
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 radius = 12
 height = 5
@@ -179,7 +179,7 @@ It is a function that calculates the surface area of a cube.
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 a = 12
 
@@ -192,7 +192,7 @@ It is a function that calculates the volume of a cube.
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 a = 12
 
@@ -205,7 +205,7 @@ It is a function that calculates the surface area of a cuboid from values of len
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 l = 5
 b = 6
@@ -220,7 +220,7 @@ It is a function that calculates the volume of a cuboid from values of length, b
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 l = 4
 b = 5
@@ -235,7 +235,7 @@ It is a function that calculates the perimeter of square from a side of square.
 
 **Example:**
 ```py
-import pythmath.geometry import *
+fromt pythmath.geometry import *
 
 a = 12
 
@@ -248,7 +248,7 @@ It is a function that calculates the surface area of sphere from value of radius
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 r = 12
 
@@ -274,7 +274,7 @@ It is a function that calculates the perimeter of a parallelogram.
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 a = 12
 b = 14
@@ -288,7 +288,7 @@ It is a function that calculates the area of a parallelogram.
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 b = 12
 h = 14
@@ -302,7 +302,7 @@ It is a function that calculates the circumference of a circle from given radius
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 r = 12
 
@@ -315,7 +315,7 @@ It is a function that calculates the surface area of a cylinder from values of r
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 r = 10
 h = 12
@@ -329,7 +329,7 @@ It is a function that calculates the volume of a cylinder from values of radius 
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 r = 10
 h = 12
@@ -343,7 +343,7 @@ It is a function that calculates the area of trapezoid.
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 a = 4
 b = 5
@@ -358,7 +358,7 @@ It is a function that calculates the perimeter of a right angle triangle.
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 a = 3
 b = 4
@@ -372,7 +372,7 @@ It is a function that calculates the perimeter of a triangle.
 
 **Example:**
 ```py
-import pythmath.geometry import *
+from pythmath.geometry import *
 
 a = 12
 b = 13
@@ -390,7 +390,7 @@ It is a function that calculates the slope of a line from x and y coordinates.
 
 **Example:**
 ```py
-import pythmath.lines import *
+from pythmath.lines import *
 
 x = [4, 8]  # x1, x2
 y = [5, 10]  # y1, y2
@@ -406,7 +406,7 @@ It is a function that calculates the distance from a point to a line from x and 
 
 **Example:**
 ```py
-import pythmath.lines import *
+from pythmath.lines import *
 
 x = [4, 8]  # x1, x2
 y = [5, 10]  # y1, y2
@@ -424,7 +424,7 @@ It is a function that makes the equation of line from x and y coordinates.
 
 **Example:**
 ```py
-import pythmath.lines import *
+from pythmath.lines import *
 
 x = [4, 8]  # x1, x2
 y = [5, 10]  # y1, y2
@@ -440,7 +440,7 @@ It is a function that calculates the midpoint or middle point of a line from x a
 
 **Example:**
 ```py
-import pythmath.lines import *
+from pythmath.lines import *
 
 x = [4, 8]  # x1, x2
 y = [5, 10]  # y1, y2
@@ -456,7 +456,7 @@ It is a function that gets the y intercept from x and y coordinates.
 
 **Example:**
 ```py
-import pythmath.lines import *
+from pythmath.lines import *
 
 x = [4, 8]  # x1, x2
 y = [5, 10]  # y1, y2
