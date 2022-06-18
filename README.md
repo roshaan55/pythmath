@@ -207,9 +207,9 @@ It is a function that calculates the surface area of a cuboid from values of len
 ```py
 import pythmath.geometry import *
 
-l=5
-b=6
-h=7
+l = 5
+b = 6
+h = 7
 
 print(surf_area_cuboid(l, b, h))
 ```
@@ -222,9 +222,9 @@ It is a function that calculates the volume of a cuboid from values of length, b
 ```py
 import pythmath.geometry import *
 
-l=4
-b=5
-h=6
+l = 4
+b = 5
+h = 6
 
 print(volume_cuboid(l, b, h))
 ```
@@ -392,8 +392,8 @@ It is a function that calculates the slope of a line from x and y coordinates.
 ```py
 import pythmath.lines import *
 
-x = [4, 8]
-y = [5, 10]
+x = [4, 8]  # x1, x2
+y = [5, 10]  # y1, y2
 
 print(slope(x, y))
 ```
@@ -520,14 +520,16 @@ It is a function that calculates the angle from arc length and radius, it basica
 
 **Example:**
 ```py
-import pythmath
+from pythmath.geometry import *
+from pythmath import pi
 
-arc_len = 5 * pythmath.pi
+
+arc_len = 5 * pi
 radius = 6
 
-print(pythmath.angle(arc_len, radius))
+print(angle(arc_len, radius))
 ```
-**Output:** 150.0
+**Output:** 150
 
 ## Arc Length(Radians):
 It is a function that calculates the arc length from angle (in radians) and radius.
@@ -536,12 +538,12 @@ It is a function that calculates the arc length from angle (in radians) and radi
 
 **Example:**
 ```py
-import pythmath
+from pythmath.geometry import *
 
 angle = 0.698132
 radius = 8
 
-print(pythmath.arc_length(angle, radius))
+print(arc_length(angle, radius))
 ```
 **Output:** 5.585056
 
@@ -552,12 +554,12 @@ It is a function that calculates the arc length from angle (in degrees) and radi
 
 **Example:**
 ```py
-import pythmath
+from pythmath.geometry import *
 
 angle = 40
 radius = 8
 
-print(pythmath.arc_length_deg(angle, radius))
+print(arc_length_deg(angle, radius))
 ```
 **Output:** 5.585053606381854
 
@@ -589,12 +591,12 @@ It is a function that takes numerator and denominator as input and returns prope
 
 **Example:**
 ```py
-import pythmath
+from pythmath.fractions import *
 
 numer = 25
 denom = 100
 
-print(pythmath.fraction(numer, denom))
+print(fraction(numer, denom))
 ```
 **Output:** 1/4
 
@@ -609,11 +611,11 @@ It is a function that converts the proper fraction, improper fraction and mixed 
 
 **Example:**
 ```py
-import pythmath
+from pythmath.fractions import *
 
 frac_str = "2 2/5"
 
-print(pythmath.fraction_to_float(frac_str))
+print(fraction_to_float(frac_str))
 ```
 **Output:** 2.4
 
@@ -628,11 +630,11 @@ It is a function that converts an exact floating number to proper fraction or im
 
 **Example:**
 ```py
-import pythmath
+from pythmath.fractions import *
 
 flt_num = 0.5
 
-print(pythmath.float_to_frac(flt_num))
+print(float_to_frac(flt_num))
 ```
 **Output:** 2.4
 
@@ -733,11 +735,11 @@ It is a function that calculates the harmonic mean from given dataset, list of n
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 data = [6, 7, 3, 9, 10, 15]
 
-print(pythmath.harmonic_mean(data))
+print(harmonic_mean(data))
 ```
 **Output:** 6.517241379310345
 
@@ -748,11 +750,11 @@ It is a function that calculates the geometric mean from given dataset, list of 
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 data = [1, 2, 3, 4, 5]
 
-print(pythmath.geometric_mean(data))
+print(geometric_mean(data))
 ```
 **Output:** 2.605171084697352
 
@@ -763,11 +765,11 @@ It is a function that calculates the median absolute deviation from a given data
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 data = [1, 2, 3, 4, 5]
 
-print(pythmath.median_abs_dev([1, 2, 3, 4, 5]))
+print(median_abs_dev([1, 2, 3, 4, 5]))
 ```
 **Output:** 1.0
 
@@ -780,12 +782,12 @@ It is a function that calculates the covariance from two datasets or lists of nu
 
 **With cov_mode=samp**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 x = [1, 2, 3, 4]
 y = [5, 6, 7, 8]
 
-print(pythmath.covariance(x, y, cov_mode="samp"))
+print(covariance(x, y, cov_mode="samp"))
 ```
 **Output:** 1.6666666666666667
 
@@ -796,7 +798,7 @@ import pythmath
 x = [1, 2, 3, 4]
 y = [5, 6, 7, 8]
 
-print(pythmath.covariance(x, y, cov_mode="pop"))
+print(covariance(x, y, cov_mode="pop"))
 ```
 **Output:** 1.25
 
@@ -1455,11 +1457,11 @@ It is a function to calculate the mean of given dataset or list.
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 numbers = [1, 2, 3, 4, 5]
 
-print(pythmath.mean(numbers))
+print(mean(numbers))
 ```
 **Output:** 3.0
 
@@ -1469,11 +1471,11 @@ It is function that calculates median of given dataset or list.
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 numbers = [1, 2, 3, 4, 5]
 
-print(pythmath.median(numbers))
+print(median(numbers))
 ```
 **Output:** 3
 
@@ -1483,11 +1485,11 @@ It is a function that gets the mode of given datasets or list.
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 numbers = [1, 2, 3, 4, 5, 5]
 
-print(pythmath.mode(numbers))
+print(mode(numbers))
 ```
 **Output:** 5
 
@@ -1497,11 +1499,11 @@ It calculates the standard deviation from given dataset or list of numbers.
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 data = [1, 2, 3, 4, 5]
 
-print(pythmath.stdev(data))
+print(stdev(data))
 ```
 **Output:** 1.5811388300841898
 
@@ -1510,11 +1512,11 @@ It is a function that calculates population standard deviation from given datase
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 data = [1, 2, 3, 4, 5]
 
-print(pythmath.pstdev(data))
+print(pstdev(data))
 ```
 **Output:** 1.4142135623730951
 
@@ -1524,11 +1526,11 @@ It is a function that calculates the mean absolute deviation from given dataset 
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 data = [1, 2, 3, 4, 5]
 
-print(pythmath.mean_abs_dev(data))
+print(mean_abs_dev(data))
 ```
 **Output:** 1.2
 
@@ -1541,11 +1543,11 @@ It is a function that calculates the variance from given dataset or list of valu
 
 **With v_mode="std"**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 data = [2, 4, 6, 8, 10]
 
-print(pythmath.variance(data))
+print(variance(data))
 ```
 **Output:** 10.0
 
@@ -1565,13 +1567,13 @@ It is a function that calculates the z score value from x, mean value and from v
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 x = 70
 mean_val = 60
 st_dev = 15
 
-print(pythmath.zscore(x, mean_val, st_dev))
+print(zscore(x, mean_val, st_dev))
 ```
 **Output:** 0.6666666666666666
 
@@ -1581,11 +1583,11 @@ It is a function that calculates standard error from given dataset or from list 
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 data = [10, 12, 16, 21, 25]
 
-print(pythmath.stderr(data))
+print(stderr(data))
 ```
 **Output:** 2.782085548648711
 
@@ -1597,12 +1599,12 @@ It is a function that calculates the sampling error. It takes three parameters: 
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 n = 2500
 pst_dev = 0.40
 
-print(pythmath.samp_err(n, pst_dev))
+print(samp_err(n, pst_dev))
 ```
 **Output:** 0.01568
 
@@ -1612,11 +1614,11 @@ It is a function that calculates the statistical range from given dataset or set
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 lst = [1, 2, 3, 4, 5]
 
-print(pythmath.stats_range(lst))
+print(stats_range(lst))
 ```
 **Output:** 4
 
@@ -1626,11 +1628,11 @@ It is a function that calculates the midpoint range from given dataset or set of
 
 **Example:**
 ```py
-import pythmath
+from pythmath.statistics import *
 
 lst = [1, 2, 3, 4, 5]
 
-print(pythmath.midrange(lst))
+print(midrange(lst))
 ```
 **Output:** 3.0
 
@@ -1640,12 +1642,12 @@ It is a funcion that calculates the percentage error from measured value and tru
 
 **Example:**
 ```py
-import pythmath
+from pythmath.errors import *
 
 measured_val = 8
 true_val = 10
 
-print(pythmath.perc_err(measured_val, true_val))
+print(perc_err(measured_val, true_val))
 ```
 **Output:** 20.0
 
@@ -1654,12 +1656,12 @@ It is a function that calculates the absolute error from measured value and true
 
 **Example:**
 ```py
-import pythmath
+from pythmath.errors import *
 
 measured_val = 8
 true_val = 10
 
-print(pythmath.abs_err(measured_val, true_val))
+print(abs_err(measured_val, true_val))
 ```
 **Output:** 2
 
@@ -1668,12 +1670,12 @@ It is a function that calculates the relatable error from measured value and tru
 
 **Example:**
 ```py
-import pythmath
+from pythmath.errors import *
 
 measured_val = 8
 true_val = 10
 
-print(pythmath.rel_error(measured_val, true_val))
+print(rel_error(measured_val, true_val))
 ```
 **Output:** 0.2
 
