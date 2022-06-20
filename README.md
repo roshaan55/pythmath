@@ -167,8 +167,8 @@ It is a function that calculates the volume of a cone from values of radius and 
 ```py
 from pythmath.geometry import *
 
-radius = 12
-height = 5
+r = 12
+h = 5
 
 print(volume_cone(r, h))
 ```
@@ -252,7 +252,7 @@ from pythmath.geometry import *
 
 r = 12
 
-print(surf_area_sphere(12))
+print(surf_area_sphere(r))
 ```
 **Output:** 1809.5573684677208
 
@@ -265,7 +265,7 @@ import pythmath.geometry import *
 
 r = 12
 
-print(volume_sphere(12))
+print(volume_sphere(r))
 ```
 **Output:** 7238.229473870882
 
@@ -571,6 +571,9 @@ It is a function that calculates the average rate of change from f(a) and f(b) c
 **Example:**
 ```py
 import pythmath
+
+def f(x):
+    return 3 * x - 12
 
 a = 5
 b = 8
