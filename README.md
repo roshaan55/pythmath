@@ -8,7 +8,7 @@ New updates includes error functions such as percentage error, absolute error an
 
 New math functions and statistic functions added in recent revised version of **pthmath 0.2** version **pythmath 0.2.1** which are **nth Root**, **Harmonic Mean**, **Geometric Mean**, **Median Absolute Deviation**, **Multiply a list**, **Covariance**, **List Prime Factors**, **List of Prime Numbers**, **List of Odd Numbers**, **List of Even Numbers**.
 
-New functions added in new update **pythmath 0.2.2** which are **Quadratic Equation**, **List of factors of a numbers**, **Angle Formula**, **Arc Lengnth(Radians)**, **Arc Length(Degrees)** and **Average Rate of Change**. It also includes fraction functions **Fraction**, **Fraction to Float** and **Float to Fraction**.
+New functions added in new update **pythmath 0.2.2** which are **Quadratic Equation**, **List of factors of a numbers**, **Angle Formula**, **Arc Lengnth(Radians)**, **Arc Length(Degrees)** and **Average Rate of Change**.
 
 **pythmath 0.2.3:** New gemoetric functions added and it also includes line functions **Slope**, **Distance of Line**, **Equation of Line**, **Midpoint** and **Y Intercept**
 
@@ -54,10 +54,12 @@ pip install --upgrade pythmath
 5) **Arc Length(Degrees)**
 6) **Average Rate of Change**
 
-## Fraction Functions:
+## Fractions:
 1) **Fraction**
-2) **Fraction to Float**
-3) **Float to Fraction**
+2) **Fraction Addition**
+3) **Fraction Subtraction**
+4) **Fraction Multiplication**
+5) **Fraction Division**
 
 ## New Math Functions:
 1) **nth Root**
@@ -584,9 +586,9 @@ print(pythmath.avg_rate_change(funct_a, funct_b, a, b))
 ```
 **Output:** 3.0
 
-# Fraction Functions:
+# Fractions:
 ## Fraction:
-It is a function that takes numerator and denominator as input and returns proper fraction or improper fraction or a simplified fraction.
+It is a Class that takes numerator and denominator as input and returns proper fraction or improper fraction or a simplified fraction.
 
 **Proper Fraction:** A fraction where the numerator is less than the denominator, then it is known as a proper fraction.
 
@@ -594,52 +596,79 @@ It is a function that takes numerator and denominator as input and returns prope
 
 **Example:**
 ```py
-from pythmath.fractions import *
+from pythmath.fractions import Fraction
 
 numer = 25
 denom = 100
 
-print(fraction(numer, denom))
+print(Fraction(numer, denom))
 ```
 **Output:** 1/4
 
-## Fraction to Float:
-It is a function that converts the proper fraction, improper fraction and mixed fraction to exact floating number.
-
-**Proper Fraction:** A fraction where the numerator is less than the denominator, then it is known as a proper fraction.
-
-**Improper Fraction:** A fraction where the numerator is greater than the denominator, then it is known as an improper fraction.
-
-**Mixed Fraction:** A mixed fraction is the combination of a natural number and fraction. It is basically an improper fraction.
+**Fraction to Float**:
+It takes fraction string as a parameter and returns fraction value to float.
 
 **Example:**
 ```py
-from pythmath.fractions import *
+from pythmath.fractions import Fraction
 
-frac_str = "2 2/5"
-
-print(fraction_to_float(frac_str))
+print(Fraction.frac_to_float("1/4"))
+print(Fraction.frac_to_float("1 1/4"))
 ```
-**Output:** 2.4
+**Output:** 0.25
 
-## Float to Fraction:
-It is a function that converts an exact floating number to proper fraction or improper fraction.
+**Output:** 1.25
 
-**Proper Fraction:** A fraction where the numerator is less than the denominator, then it is known as a proper fraction.
-
-**Improper Fraction:** A fraction where the numerator is greater than the denominator, then it is known as an improper fraction.
-
-**Mixed Fraction:** A mixed fraction is the combination of a natural number and fraction. It is basically an improper fraction.
+**Float to Fraction**:
+It takes float value as a parameter and returns float value to fraction.
 
 **Example:**
 ```py
-from pythmath.fractions import *
+from pythmath.fractions import Fraction
 
-flt_num = 0.5
-
-print(float_to_frac(flt_num))
+print(Fraction.float_to_frac(0.25))
 ```
-**Output:** 2.4
+**Output:** 1/4
+
+## Fraction Addition:
+
+**Example:**
+```py
+from pythmath.fractions import Fraction
+
+print(Fraction(1, 4) + Fraction(1, 4))
+```
+**Output:** 1/2
+
+## Fraction Subtraction:
+
+**Example:**
+```py
+from pythmath.fractions import Fraction
+
+print(Fraction(1, 2) - Fraction(1, 3))
+```
+**Output:** 1/6
+
+## Fraction Multiplication:
+
+**Example:**
+```py
+from pythmath.fractions import Fraction
+
+print(Fraction(1, 2) * Fraction(1, 3))
+```
+**Output:** 1/6
+
+## Fraction Division:
+
+**Example:**
+```py
+from pythmath.fractions import Fraction
+
+print(Fraction(1, 2) / Fraction(1, 3))
+```
+**Output:** 3/2
 
 # New Math Functions:
 ## nth Root:
@@ -855,7 +884,7 @@ import pythmath
 a = 10
 b = 18
 
-print(pythmath.calc_lcm(a, b))
+print(pythmath.lcm(a, b))
 ```
 **Output:** 90.0
 
@@ -869,7 +898,7 @@ import pythmath
 a = 20
 b = 18
 
-print(pythmath.calc_gcd(a, b))
+print(pythmath.gcd(a, b))
 ```
 **Output:** 2.0
 
