@@ -12,6 +12,8 @@ New functions added in new update **pythmath 0.2.2** which are **Quadratic Equat
 
 **pythmath 0.2.3:** New gemoetric functions added and it also includes line functions **Slope**, **Distance of Line**, **Equation of Line**, **Midpoint** and **Y Intercept**
 
+**pythmath 0.2.5:** New updated version includes sales functions such as **discount**, **gst_amount**, **gross_sales**, **net_sales**, **sales_tax**, **vat**, **revenue**, **profit**, **markup**, **commission** and **margin** which may help you in calculating sales.
+
 ## Installation:
 ```nano
 pip install pythmath
@@ -20,6 +22,19 @@ pip install pythmath
 ```nano
 pip install --upgrade pythmath
 ```
+
+## Sales Functions:
+1) **Discount**
+2) **GST Amount**
+3) **Gross Sales**
+4) **Net Sales**
+5) **Sales Tax**
+6) **VAT(Value Added Tax)**
+7) **Revenue**
+8) **Profit**
+9) **Markup**
+10) **Commission**
+11) **Margin**
 
 ## New Geometric Functions:
 1) **Volume of Cone**
@@ -160,6 +175,21 @@ pip install --upgrade pythmath
 1) **Percentage Error**
 2) **Absolute Error**
 3) **Relatable Error**
+
+# Sales Functions:
+## Discount:
+It is a function that calculates the discounted amount from given percent.
+
+**Example:**
+```py
+from pythmath.sales import discount
+
+r = 12
+h = 5
+
+print(volume_cone(r, h))
+```
+**Output:** 753.9822368615504
 
 # New Geometric Functions:
 ## Volume of Cone:
