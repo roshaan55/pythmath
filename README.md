@@ -196,6 +196,7 @@ print(f"Total: Rs {tax_pr}")
 print(f"You're saving: Rs {saved_amount}")
 ```
 **Output with tax=True:**
+
 Price: Rs 3500
 Discount: 10%
 Sales Tax: 6%
@@ -218,6 +219,7 @@ print(f"You're saving: Rs {dis}")
 ```
 
 **Output:**
+
 Price: Rs 3500
 Discount: 10%
 Total: Rs 3150.0
