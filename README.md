@@ -30,11 +30,10 @@ pip install --upgrade pythmath
 4) **Net Sales**
 5) **Sales Tax**
 6) **VAT(Value Added Tax)**
-7) **Revenue**
-8) **Profit**
-9) **Markup**
-10) **Commission**
-11) **Margin**
+7) **Profit**
+8) **Markup**
+9) **Commission**
+10) **Margin**
 
 ## New Geometric Functions:
 1) **Volume of Cone**
@@ -184,12 +183,242 @@ It is a function that calculates the discounted amount from given percent.
 ```py
 from pythmath.sales import discount
 
-r = 12
-h = 5
+price = 3500
+off = 10
+tax = 6
 
-print(volume_cone(r, h))
+# with tax=True
+tax_pr, saved_amount = discount(price, off, tax_perc=tax, tax=True)
+print(f"Price: Rs {price}")
+print(f"Discount: {off}%")
+print(f"Sales Tax: {tax}%")
+print(f"Total: Rs {tax_pr}")
+print(f"You're saving: Rs {saved_amount}")
 ```
-**Output:** 753.9822368615504
+**Output with tax=True:**
+Price: Rs 3500
+Discount: 10%
+Sales Tax: 6%
+Total: Rs 3339.0
+You're saving: Rs 371.0
+
+```py
+from pythmath.sales import discount
+
+price = 3500
+off = 10
+tax = 6
+
+# With Tax=False, by default it's false
+dis, dis_price = discount(price, off)
+print(f"Price: Rs {price}")
+print(f"Discount: {off}%")
+print(f"Total: Rs {dis_price}")
+print(f"You're saving: Rs {dis}")
+```
+
+**Output:**
+Price: Rs 3500
+Discount: 10%
+Total: Rs 3150.0
+You're saving: Rs 350.0
+
+## GST Amount:
+It is a function that Helps you find out either net or gross price of your product based on a percentage-based GST (Goods and Services Tax) rate.
+
+**Example:**
+```py
+from pythmath.sales import gst_amount
+
+price = 3500
+off = 10
+tax = 6
+
+tax_amount = gst_amount(price, tax)
+print(f"Price: Rs {price}")
+print(f'Discount: {dis}')
+print(f"Discounted Price: {dis_price}")
+print(f"Amount inclusive tax: {tax_amount}")
+```
+**Output:**
+Price: Rs 3500
+Discount: 350.0
+Discounted Price: 3150.0
+Amount inclusive tax: 3710.0
+
+## Gross Sales:
+It is a fuction that calculates the gross sales.
+
+**Example:**
+```py
+from pythmath.sales import gross_sales
+
+price = 3500
+number_products_sale = 100
+
+gro_sales = gross_sales(price, number_products_sale)
+# Gross Sales
+print(f"Price: Rs {price}")
+print(f"Number of products sale: {number_products_sale}")
+print(f"Gross Sales: Rs {gro_sales}")
+```
+**Output:**
+Price: Rs 3500
+Number of products sale: 100
+Gross Sales: Rs 350000
+
+## Net Sales:
+It is a fuction that calculates the net sales.
+
+**Example:**
+```py
+from pythmath.sales import net_sales
+
+price = 3500
+number_products_sale = 100
+allowances = 200
+
+net_sales = net_sales(gro_sales, allowances=allowances)
+print(f"Allowances: Rs {allowances}")
+print(f"Net Sales: Rs {net_sales}")
+```
+**Output:**
+Allowances: Rs 200
+Net Sales: Rs 349800
+
+## Sales Tax:
+It is a fuction that calculates the sales tax.
+
+**Example:**
+```py
+from pythmath.sales import sales_tax
+
+price = 3500
+tax = 4
+
+tax_amnt, tax_pr = sales_tax(price, tax)
+
+print(f"Price: Rs {price}")
+print(f"Tax: {tax}%")
+print(f"Gross Price: Rs {tax_pr}")
+print(f"Tax Amount: Rs {tax_amnt}")
+```
+**Output:**
+Price: Rs 3500
+Tax: 4%
+Gross Price: Rs 3640.0
+Tax Amount: Rs 140.0
+
+## VAT(Value Added Tax):
+It is a fuction that calculates the value added tax.
+
+**Example:**
+```py
+from pythmath.sales import vat
+
+price = 3500
+tax = 4
+
+vat_amnt, vat_pr = vat(price, tax)
+
+print(f"Price: Rs {price}")
+print(f"Tax: {tax}%")
+print(f"Gross Price: Rs {vat_pr}")
+print(f"Tax Amount: Rs {vat_amnt}")
+```
+**Output:**
+Price: Rs 3500
+Tax: 4%
+Gross Price: Rs 3640.0
+Tax Amount: Rs 140.0
+
+## Profit:
+It is a fuction that calculates the profit.
+
+**Example:**
+```py
+from pythmath.sales import profit
+
+cost = 40
+rev_val = 50
+
+profit = profit(rev_val, cost)
+
+print(f"Cost: {cost}")
+print(f"Revenue Value: {rev_val}")
+print(f"Profit Value: {prof_val}")
+```
+**Output:**
+Cost: 40
+Revenue Value: 50
+Profit Value: 10
+
+## Markup:
+It is a fuction that calculates the markup percentage.
+
+**Example:**
+```py
+from pythmath.sales import markup
+
+cost = 40
+rev_val = 50
+
+markup = markup(cost, prof_val)
+
+print(f"Cost: {cost}")
+print(f"Markup: {mark_val}%")
+print(f"Revenue: {rev_val}")
+print(f"Profit: {prof_val}")
+```
+**Output:**
+Cost: 40
+Markup: 25.0%
+Revenue: 50
+Profit: 10
+
+## Commission:
+It is a fuction that calculates the commission.
+
+**Example:**
+```py
+from pythmath.sales import commission
+
+cost = 40
+commission_percent = 10
+
+commission = commission(cost, 10)
+
+print(f"Cost: {cost}")
+print(f"Commission Percentage: {commission_percent}%")
+print(f"Commission: {commission}")
+```
+**Output:**
+Cost: 40
+Commission Percentage: 10%
+Commission: 4.0
+
+## Margin:
+It is a fuction that calculates the margin from revenue and cost.
+
+**Example:**
+```py
+from pythmath.sales import margin
+
+cost = 40
+rev_val = 50
+
+margin_val = margin(rev_val, cost)
+
+print(f"Cost: {cost}")
+print(f"Revenue: {rev_val}")
+print(f"Margin: {margin_val}")
+print(f"Profit: {prof_val}")
+```
+**Output:**
+Cost: 40
+Revenue: 50
+Margin: 20.0
+Profit: 10
 
 # New Geometric Functions:
 ## Volume of Cone:
